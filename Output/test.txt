@@ -1,0 +1,4 @@
+Machine being run: a plus
+Input string: "a"
+Automatic stop at depth of 3
+
