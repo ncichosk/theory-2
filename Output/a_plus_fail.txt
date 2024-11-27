@@ -2,9 +2,10 @@ Machine being run: a plus
 Input string: "aaaaaaab"
 Automatic stop at depth of 100
 
-Machine terminated: True
-Machine accepted: False
-NTM Tree:
+Depth of configuration tree: 8
+Total number of transitions: 22
+String rejected after 8 transitions
+Configuration Tree:
 [['', 'q1', 'aaaaaaab']]
 [['a', 'q1', 'aaaaaab'], ['a', 'q2', 'aaaaaab']]
 [['aa', 'q1', 'aaaaab'], ['aa', 'q2', 'aaaaab'], ['a', 'qreject', 'aaaaaab']]

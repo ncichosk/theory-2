@@ -37,15 +37,22 @@ def main():
     except:
         max_depth = 100
 
-    solved, accepted, results = run_machine(input_string, rules, start, accept, reject, max_depth)
+    transitions, depth, solved, accepted, results = run_machine(input_string, rules, start, accept, reject, max_depth)
 
     if outfile:
         outfile.write(f'Machine being run: {machine}\n')
         outfile.write(f'Input string: \"{input_string}\"\n')
         outfile.write(f'Automatic stop at depth of {max_depth}\n\n')
-        outfile.write(f'Machine terminated: {solved}\n')
-        outfile.write(f'Machine accepted: {accepted}\n')
-        outfile.write(f'NTM Tree:\n')
+        outfile.write(f'Depth of configuration tree: {depth}\n')
+        outfile.write(f'Total number of transitions: {transitions}\n')
+        if solved == False:
+            outfile.write(f'Excecution halted after {depth} layers\n')
+        else:
+            if accepted == True:
+                outfile.write(f'String accepted after {depth} transitions\n')
+            else:
+                outfile.write(f'String rejected after {depth} transitions\n')
+        outfile.write(f'Configuration Tree:\n')
         for item in results:
             outfile.write(f'{item}\n')
 
@@ -53,9 +60,16 @@ def main():
         print(f'Machine being run: {machine}')
         print(f'Input string: \"{input_string}\"')
         print(f'Automatic stop at depth of {max_depth}\n')
-        print(f'Machine terminated: {solved}')
-        print(f'Machine accepted: {accepted}')
-        print(f'NTM Tree:')
+        print(f'Depth of configuration tree: {depth}')
+        print(f'Total number of transitions: {transitions}')
+        if solved == False:
+            print(f'Excecution halted after {depth} layers')
+        else:
+            if accepted == True:
+                print(f'String accepted after {depth} transitions')
+            else:
+                print(f'String rejected after {depth} transitions')
+        print(f'Configuration Tree:')
         for item in results:
             print(item)
 

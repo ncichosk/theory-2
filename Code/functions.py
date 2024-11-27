@@ -6,19 +6,18 @@ def run_machine(input, rules, start, accept, reject, max_depth):
     depth = 0
     tree = []
     accept_flag = 0
+    transitions = 0
 
     tree.append([["", start, input]])    
 
     while True:
         if accept_flag == 1:
-            return True, True, tree
+            return transitions, depth, True, True, tree
         if depth >= max_depth:
-            return False, False, tree
-        depth += 1
+            return transitions, depth, False, False, tree
         
         old_layer = layer_copy(tree[-1])
         new_layer = []
-        reject_states = []
 
         for config in old_layer:
             if config[1] == reject:
@@ -29,11 +28,13 @@ def run_machine(input, rules, start, accept, reject, max_depth):
                 if item[1] == accept:
                     accept_flag = 1
                 new_layer.append(item)
+                transitions += 1
 
         if new_layer == []:
-            return True, False, tree
+            return transitions, depth, True, False, tree
 
         tree.append(new_layer)
+        depth += 1
 
 def update(config, rules, reject):
     tape_head = config[2][0]
