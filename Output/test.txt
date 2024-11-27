@@ -1,4 +1,4 @@
 Machine being run: a plus
-Input string: "a"
+Input string: "aaa"
 Automatic stop at depth of 3
 

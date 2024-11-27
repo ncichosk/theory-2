@@ -17,7 +17,7 @@ def run_machine(input, rules, start, accept, reject, max_depth):
             return False, False, tree
         depth += 1
         
-        old_layer = tree[-1]
+        old_layer = layer_copy(tree[-1])
         new_layer = []
         reject_states = []
 
@@ -26,7 +26,7 @@ def run_machine(input, rules, start, accept, reject, max_depth):
             if config[1] == reject:
                 reject_states.append(config)
             else:
-                new_configs = update(config, rules)
+                new_configs = update(config, rules, reject)
 
 
             for item in new_configs:
@@ -39,7 +39,7 @@ def run_machine(input, rules, start, accept, reject, max_depth):
 
         tree.append(new_layer)
 
-def update(config, rules):
+def update(config, rules, reject):
     tape_head = config[2][0]
     state = config[1]
     updates = []
@@ -50,8 +50,53 @@ def update(config, rules):
             updates.append(rule)
 
     for item in updates:
+        new_configs.append(update_config(tuple_copy(config), item))
+
+    if new_configs == []:
         temp = config
-        
+        temp[1] = reject
+        new_configs.append(temp)
+        return new_configs
+
+    return new_configs
+         
+def update_config(config, rule):
+        config = tuple_copy(config)
+        before = list(config[0])
+        after = list(config[2])
+
+        after[0] = rule[3]
+        config[1] = rule[2]
+
+        if rule[4] == "R":
+            hold = after.pop(0)
+            before.append(hold)
+
+            if after == []:
+                after.append("_")
+
+        if rule[4] == "L" and before != []:
+            hold = before.pop()
+            after.insert(hold)
+
+        config[0] = "".join(before)
+        config[2] = "".join(after)
+        return config
+
+def layer_copy(layer):
+    new_layer = []
+    for item in layer:
+        new_layer.append(tuple_copy(item))
+    return new_layer
+
+def tuple_copy(tuple):
+    new_tuple = []
+    for item in tuple:
+        new_tuple.append(str(item))
+    return new_tuple
+
+def write_to_output():
+    pass
 
 def main():
 
