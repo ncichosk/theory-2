@@ -1,0 +1,19 @@
+Machine being run: a plus DTM
+Input string: "aaaaaaaaaa"
+Automatic stop at depth of 100
+
+Machine terminated: True
+Machine accepted: True
+NTM Tree:
+[['', 'q1', 'aaaaaaaaaa']]
+[['a', 'q1', 'aaaaaaaaa']]
+[['aa', 'q1', 'aaaaaaaa']]
+[['aaa', 'q1', 'aaaaaaa']]
+[['aaaa', 'q1', 'aaaaaa']]
+[['aaaaa', 'q1', 'aaaaa']]
+[['aaaaaa', 'q1', 'aaaa']]
+[['aaaaaaa', 'q1', 'aaa']]
+[['aaaaaaaa', 'q1', 'aa']]
+[['aaaaaaaaa', 'q1', 'a']]
+[['aaaaaaaaaa', 'q1', '_']]
+[['aaaaaaaaaaa', 'q2', '_']]

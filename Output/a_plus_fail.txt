@@ -1,0 +1,16 @@
+Machine being run: a plus
+Input string: "aaaaaaab"
+Automatic stop at depth of 100
+
+Machine terminated: True
+Machine accepted: False
+NTM Tree:
+[['', 'q1', 'aaaaaaab']]
+[['a', 'q1', 'aaaaaab'], ['a', 'q2', 'aaaaaab']]
+[['aa', 'q1', 'aaaaab'], ['aa', 'q2', 'aaaaab'], ['a', 'qreject', 'aaaaaab']]
+[['aaa', 'q1', 'aaaab'], ['aaa', 'q2', 'aaaab'], ['aa', 'qreject', 'aaaaab']]
+[['aaaa', 'q1', 'aaab'], ['aaaa', 'q2', 'aaab'], ['aaa', 'qreject', 'aaaab']]
+[['aaaaa', 'q1', 'aab'], ['aaaaa', 'q2', 'aab'], ['aaaa', 'qreject', 'aaab']]
+[['aaaaaa', 'q1', 'ab'], ['aaaaaa', 'q2', 'ab'], ['aaaaa', 'qreject', 'aab']]
+[['aaaaaaa', 'q1', 'b'], ['aaaaaaa', 'q2', 'b'], ['aaaaaa', 'qreject', 'ab']]
+[['aaaaaaa', 'qreject', 'b'], ['aaaaaaa', 'qreject', 'b']]
