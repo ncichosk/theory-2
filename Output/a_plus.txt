@@ -1,0 +1,101 @@
+Machine being run: a plus
+Input string: "aaaaa"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 6
+Total number of transitions: 16
+String accepted after 6 transitions
+Configuration Tree:
+[['', 'q1', 'aaaaa']]
+[['a', 'q1', 'aaaa'], ['a', 'q2', 'aaaa']]
+[['aa', 'q1', 'aaa'], ['aa', 'q2', 'aaa'], ['a', 'qreject', 'aaaa']]
+[['aaa', 'q1', 'aa'], ['aaa', 'q2', 'aa'], ['aa', 'qreject', 'aaa']]
+[['aaaa', 'q1', 'a'], ['aaaa', 'q2', 'a'], ['aaa', 'qreject', 'aa']]
+[['aaaaa', 'q1', '_'], ['aaaaa', 'q2', '_'], ['aaaa', 'qreject', 'a']]
+[['aaaaa', 'qreject', '_'], ['aaaa', 'q3', 'a_']]
+
+Machine being run: a plus
+Input string: "aaac"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 4
+Total number of transitions: 10
+String rejected after 4 transitions
+Configuration Tree:
+[['', 'q1', 'aaac']]
+[['a', 'q1', 'aac'], ['a', 'q2', 'aac']]
+[['aa', 'q1', 'ac'], ['aa', 'q2', 'ac'], ['a', 'qreject', 'aac']]
+[['aaa', 'q1', 'c'], ['aaa', 'q2', 'c'], ['aa', 'qreject', 'ac']]
+[['aaa', 'qreject', 'c'], ['aaa', 'qreject', 'c']]
+
+Machine being run: a plus
+Input string: "a"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 4
+String accepted after 2 transitions
+Configuration Tree:
+[['', 'q1', 'a']]
+[['a', 'q1', '_'], ['a', 'q2', '_']]
+[['a', 'qreject', '_'], ['', 'q3', 'a_']]
+
+Machine being run: a plus
+Input string: "aaaaaaaaa"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 10
+Total number of transitions: 28
+String accepted after 10 transitions
+Configuration Tree:
+[['', 'q1', 'aaaaaaaaa']]
+[['a', 'q1', 'aaaaaaaa'], ['a', 'q2', 'aaaaaaaa']]
+[['aa', 'q1', 'aaaaaaa'], ['aa', 'q2', 'aaaaaaa'], ['a', 'qreject', 'aaaaaaaa']]
+[['aaa', 'q1', 'aaaaaa'], ['aaa', 'q2', 'aaaaaa'], ['aa', 'qreject', 'aaaaaaa']]
+[['aaaa', 'q1', 'aaaaa'], ['aaaa', 'q2', 'aaaaa'], ['aaa', 'qreject', 'aaaaaa']]
+[['aaaaa', 'q1', 'aaaa'], ['aaaaa', 'q2', 'aaaa'], ['aaaa', 'qreject', 'aaaaa']]
+[['aaaaaa', 'q1', 'aaa'], ['aaaaaa', 'q2', 'aaa'], ['aaaaa', 'qreject', 'aaaa']]
+[['aaaaaaa', 'q1', 'aa'], ['aaaaaaa', 'q2', 'aa'], ['aaaaaa', 'qreject', 'aaa']]
+[['aaaaaaaa', 'q1', 'a'], ['aaaaaaaa', 'q2', 'a'], ['aaaaaaa', 'qreject', 'aa']]
+[['aaaaaaaaa', 'q1', '_'], ['aaaaaaaaa', 'q2', '_'], ['aaaaaaaa', 'qreject', 'a']]
+[['aaaaaaaaa', 'qreject', '_'], ['aaaaaaaa', 'q3', 'a_']]
+
+Machine being run: a plus
+Input string: "cccaaacca"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 1
+Total number of transitions: 1
+String rejected after 1 transitions
+Configuration Tree:
+[['', 'q1', 'cccaaacca']]
+[['', 'qreject', 'cccaaacca']]
+
+Machine being run: a plus
+Input string: "aaaaaaca"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 7
+Total number of transitions: 19
+String rejected after 7 transitions
+Configuration Tree:
+[['', 'q1', 'aaaaaaca']]
+[['a', 'q1', 'aaaaaca'], ['a', 'q2', 'aaaaaca']]
+[['aa', 'q1', 'aaaaca'], ['aa', 'q2', 'aaaaca'], ['a', 'qreject', 'aaaaaca']]
+[['aaa', 'q1', 'aaaca'], ['aaa', 'q2', 'aaaca'], ['aa', 'qreject', 'aaaaca']]
+[['aaaa', 'q1', 'aaca'], ['aaaa', 'q2', 'aaca'], ['aaa', 'qreject', 'aaaca']]
+[['aaaaa', 'q1', 'aca'], ['aaaaa', 'q2', 'aca'], ['aaaa', 'qreject', 'aaca']]
+[['aaaaaa', 'q1', 'ca'], ['aaaaaa', 'q2', 'ca'], ['aaaaa', 'qreject', 'aca']]
+[['aaaaaa', 'qreject', 'ca'], ['aaaaaa', 'qreject', 'ca']]
+
+Machine being run: a plus
+Input string: "_"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 1
+Total number of transitions: 1
+String rejected after 1 transitions
+Configuration Tree:
+[['', 'q1', '_']]
+[['', 'qreject', '_']]
+

@@ -1,0 +1,219 @@
+Machine being run: a*b*c* Deterministic
+Input string: "_"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 1
+Total number of transitions: 1
+String accepted after 1 transitions
+Configuration Tree:
+[['', 'q0', '_']]
+[['_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "a"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 2
+String accepted after 2 transitions
+Configuration Tree:
+[['', 'q0', 'a']]
+[['a', 'q1', '_']]
+[['a_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "b"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 2
+String accepted after 2 transitions
+Configuration Tree:
+[['', 'q0', 'b']]
+[['b', 'q2', '_']]
+[['b_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "c"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 2
+String accepted after 2 transitions
+Configuration Tree:
+[['', 'q0', 'c']]
+[['c', 'q3', '_']]
+[['c_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "ab"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 3
+Total number of transitions: 3
+String accepted after 3 transitions
+Configuration Tree:
+[['', 'q0', 'ab']]
+[['a', 'q1', 'b']]
+[['ab', 'q2', '_']]
+[['ab_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "bc"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 3
+Total number of transitions: 3
+String accepted after 3 transitions
+Configuration Tree:
+[['', 'q0', 'bc']]
+[['b', 'q2', 'c']]
+[['bc', 'q3', '_']]
+[['bc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "ac"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 3
+Total number of transitions: 3
+String accepted after 3 transitions
+Configuration Tree:
+[['', 'q0', 'ac']]
+[['a', 'q1', 'c']]
+[['ac', 'q3', '_']]
+[['ac_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "acb"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 3
+Total number of transitions: 3
+String rejected after 3 transitions
+Configuration Tree:
+[['', 'q0', 'acb']]
+[['a', 'q1', 'cb']]
+[['ac', 'q3', 'b']]
+[['ac', 'qrej', 'b']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "abc"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 4
+Total number of transitions: 4
+String accepted after 4 transitions
+Configuration Tree:
+[['', 'q0', 'abc']]
+[['a', 'q1', 'bc']]
+[['ab', 'q2', 'c']]
+[['abc', 'q3', '_']]
+[['abc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "aaaacccccc"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 11
+Total number of transitions: 11
+String accepted after 11 transitions
+Configuration Tree:
+[['', 'q0', 'aaaacccccc']]
+[['a', 'q1', 'aaacccccc']]
+[['aa', 'q1', 'aacccccc']]
+[['aaa', 'q1', 'acccccc']]
+[['aaaa', 'q1', 'cccccc']]
+[['aaaac', 'q3', 'ccccc']]
+[['aaaacc', 'q3', 'cccc']]
+[['aaaaccc', 'q3', 'ccc']]
+[['aaaacccc', 'q3', 'cc']]
+[['aaaaccccc', 'q3', 'c']]
+[['aaaacccccc', 'q3', '_']]
+[['aaaacccccc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "aaaabbbbbcccccccc"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 18
+Total number of transitions: 18
+String accepted after 18 transitions
+Configuration Tree:
+[['', 'q0', 'aaaabbbbbcccccccc']]
+[['a', 'q1', 'aaabbbbbcccccccc']]
+[['aa', 'q1', 'aabbbbbcccccccc']]
+[['aaa', 'q1', 'abbbbbcccccccc']]
+[['aaaa', 'q1', 'bbbbbcccccccc']]
+[['aaaab', 'q2', 'bbbbcccccccc']]
+[['aaaabb', 'q2', 'bbbcccccccc']]
+[['aaaabbb', 'q2', 'bbcccccccc']]
+[['aaaabbbb', 'q2', 'bcccccccc']]
+[['aaaabbbbb', 'q2', 'cccccccc']]
+[['aaaabbbbbc', 'q3', 'ccccccc']]
+[['aaaabbbbbcc', 'q3', 'cccccc']]
+[['aaaabbbbbccc', 'q3', 'ccccc']]
+[['aaaabbbbbcccc', 'q3', 'cccc']]
+[['aaaabbbbbccccc', 'q3', 'ccc']]
+[['aaaabbbbbcccccc', 'q3', 'cc']]
+[['aaaabbbbbccccccc', 'q3', 'c']]
+[['aaaabbbbbcccccccc', 'q3', '_']]
+[['aaaabbbbbcccccccc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "aaaaccccabbbbbbbb"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 9
+Total number of transitions: 9
+String rejected after 9 transitions
+Configuration Tree:
+[['', 'q0', 'aaaaccccabbbbbbbb']]
+[['a', 'q1', 'aaaccccabbbbbbbb']]
+[['aa', 'q1', 'aaccccabbbbbbbb']]
+[['aaa', 'q1', 'accccabbbbbbbb']]
+[['aaaa', 'q1', 'ccccabbbbbbbb']]
+[['aaaac', 'q3', 'cccabbbbbbbb']]
+[['aaaacc', 'q3', 'ccabbbbbbbb']]
+[['aaaaccc', 'q3', 'cabbbbbbbb']]
+[['aaaacccc', 'q3', 'abbbbbbbb']]
+[['aaaacccc', 'qrej', 'abbbbbbbb']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "ccccccbbaa"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 7
+Total number of transitions: 7
+String rejected after 7 transitions
+Configuration Tree:
+[['', 'q0', 'ccccccbbaa']]
+[['c', 'q3', 'cccccbbaa']]
+[['cc', 'q3', 'ccccbbaa']]
+[['ccc', 'q3', 'cccbbaa']]
+[['cccc', 'q3', 'ccbbaa']]
+[['ccccc', 'q3', 'cbbaa']]
+[['cccccc', 'q3', 'bbaa']]
+[['cccccc', 'qrej', 'bbaa']]
+
+Machine being run: a*b*c* Deterministic
+Input string: "abbbbbbbbb"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 11
+Total number of transitions: 11
+String accepted after 11 transitions
+Configuration Tree:
+[['', 'q0', 'abbbbbbbbb']]
+[['a', 'q1', 'bbbbbbbbb']]
+[['ab', 'q2', 'bbbbbbbb']]
+[['abb', 'q2', 'bbbbbbb']]
+[['abbb', 'q2', 'bbbbbb']]
+[['abbbb', 'q2', 'bbbbb']]
+[['abbbbb', 'q2', 'bbbb']]
+[['abbbbbb', 'q2', 'bbb']]
+[['abbbbbbb', 'q2', 'bb']]
+[['abbbbbbbb', 'q2', 'b']]
+[['abbbbbbbbb', 'q2', '_']]
+[['abbbbbbbbb_', 'qacc', '_']]
+

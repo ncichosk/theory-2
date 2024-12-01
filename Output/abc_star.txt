@@ -1,0 +1,189 @@
+Machine being run: a*b*c* Nondeterministic
+Input string: "_"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 2
+String accepted after 2 transitions
+Configuration Tree:
+[['', 'q0', '_']]
+[['_', 'q3', '_']]
+[['__', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "a"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 8
+String accepted after 2 transitions
+Configuration Tree:
+[['', 'q0', 'a']]
+[['a', 'q0', '_'], ['a', 'q1', '_'], ['a', 'q2', '_'], ['a', 'q3', '_']]
+[['a_', 'q3', '_'], ['a', 'qrej', '_'], ['a', 'qrej', '_'], ['a_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "b"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 6
+String accepted after 2 transitions
+Configuration Tree:
+[['', 'q0', 'b']]
+[['b', 'q1', '_'], ['b', 'q2', '_'], ['b', 'q3', '_']]
+[['b', 'qrej', '_'], ['b', 'qrej', '_'], ['b_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "c"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 4
+String accepted after 2 transitions
+Configuration Tree:
+[['', 'q0', 'c']]
+[['c', 'q2', '_'], ['c', 'q3', '_']]
+[['c', 'qrej', '_'], ['c_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "ab"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 3
+Total number of transitions: 18
+String accepted after 3 transitions
+Configuration Tree:
+[['', 'q0', 'ab']]
+[['a', 'q0', 'b'], ['a', 'q1', 'b'], ['a', 'q2', 'b'], ['a', 'q3', 'b']]
+[['ab', 'q1', '_'], ['ab', 'q2', '_'], ['ab', 'q3', '_'], ['ab', 'q1', '_'], ['ab', 'q2', '_'], ['ab', 'q3', '_'], ['a', 'qrej', 'b'], ['a', 'qrej', 'b']]
+[['ab', 'qrej', '_'], ['ab', 'qrej', '_'], ['ab_', 'qacc', '_'], ['ab', 'qrej', '_'], ['ab', 'qrej', '_'], ['ab_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "bc"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 3
+Total number of transitions: 9
+String accepted after 3 transitions
+Configuration Tree:
+[['', 'q0', 'bc']]
+[['b', 'q1', 'c'], ['b', 'q2', 'c'], ['b', 'q3', 'c']]
+[['b', 'qrej', 'c'], ['bc', 'q2', '_'], ['bc', 'q3', '_'], ['b', 'qrej', 'c']]
+[['bc', 'qrej', '_'], ['bc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "ac"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 3
+Total number of transitions: 14
+String accepted after 3 transitions
+Configuration Tree:
+[['', 'q0', 'ac']]
+[['a', 'q0', 'c'], ['a', 'q1', 'c'], ['a', 'q2', 'c'], ['a', 'q3', 'c']]
+[['ac', 'q2', '_'], ['ac', 'q3', '_'], ['a', 'qrej', 'c'], ['ac', 'q2', '_'], ['ac', 'q3', '_'], ['a', 'qrej', 'c']]
+[['ac', 'qrej', '_'], ['ac_', 'qacc', '_'], ['ac', 'qrej', '_'], ['ac_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "aaacccb"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 7
+Total number of transitions: 40
+String rejected after 7 transitions
+Configuration Tree:
+[['', 'q0', 'aaacccb']]
+[['a', 'q0', 'aacccb'], ['a', 'q1', 'aacccb'], ['a', 'q2', 'aacccb'], ['a', 'q3', 'aacccb']]
+[['aa', 'q0', 'acccb'], ['aa', 'q1', 'acccb'], ['aa', 'q2', 'acccb'], ['aa', 'q3', 'acccb'], ['a', 'qrej', 'aacccb'], ['a', 'qrej', 'aacccb'], ['a', 'qrej', 'aacccb']]
+[['aaa', 'q0', 'cccb'], ['aaa', 'q1', 'cccb'], ['aaa', 'q2', 'cccb'], ['aaa', 'q3', 'cccb'], ['aa', 'qrej', 'acccb'], ['aa', 'qrej', 'acccb'], ['aa', 'qrej', 'acccb']]
+[['aaac', 'q2', 'ccb'], ['aaac', 'q3', 'ccb'], ['aaa', 'qrej', 'cccb'], ['aaac', 'q2', 'ccb'], ['aaac', 'q3', 'ccb'], ['aaa', 'qrej', 'cccb']]
+[['aaacc', 'q2', 'cb'], ['aaacc', 'q3', 'cb'], ['aaac', 'qrej', 'ccb'], ['aaacc', 'q2', 'cb'], ['aaacc', 'q3', 'cb'], ['aaac', 'qrej', 'ccb']]
+[['aaaccc', 'q2', 'b'], ['aaaccc', 'q3', 'b'], ['aaacc', 'qrej', 'cb'], ['aaaccc', 'q2', 'b'], ['aaaccc', 'q3', 'b'], ['aaacc', 'qrej', 'cb']]
+[['aaaccc', 'qrej', 'b'], ['aaaccc', 'qrej', 'b'], ['aaaccc', 'qrej', 'b'], ['aaaccc', 'qrej', 'b']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "abbbbbc"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 8
+Total number of transitions: 64
+String accepted after 8 transitions
+Configuration Tree:
+[['', 'q0', 'abbbbbc']]
+[['a', 'q0', 'bbbbbc'], ['a', 'q1', 'bbbbbc'], ['a', 'q2', 'bbbbbc'], ['a', 'q3', 'bbbbbc']]
+[['ab', 'q1', 'bbbbc'], ['ab', 'q2', 'bbbbc'], ['ab', 'q3', 'bbbbc'], ['ab', 'q1', 'bbbbc'], ['ab', 'q2', 'bbbbc'], ['ab', 'q3', 'bbbbc'], ['a', 'qrej', 'bbbbbc'], ['a', 'qrej', 'bbbbbc']]
+[['abb', 'q1', 'bbbc'], ['abb', 'q2', 'bbbc'], ['abb', 'q3', 'bbbc'], ['ab', 'qrej', 'bbbbc'], ['ab', 'qrej', 'bbbbc'], ['abb', 'q1', 'bbbc'], ['abb', 'q2', 'bbbc'], ['abb', 'q3', 'bbbc'], ['ab', 'qrej', 'bbbbc'], ['ab', 'qrej', 'bbbbc']]
+[['abbb', 'q1', 'bbc'], ['abbb', 'q2', 'bbc'], ['abbb', 'q3', 'bbc'], ['abb', 'qrej', 'bbbc'], ['abb', 'qrej', 'bbbc'], ['abbb', 'q1', 'bbc'], ['abbb', 'q2', 'bbc'], ['abbb', 'q3', 'bbc'], ['abb', 'qrej', 'bbbc'], ['abb', 'qrej', 'bbbc']]
+[['abbbb', 'q1', 'bc'], ['abbbb', 'q2', 'bc'], ['abbbb', 'q3', 'bc'], ['abbb', 'qrej', 'bbc'], ['abbb', 'qrej', 'bbc'], ['abbbb', 'q1', 'bc'], ['abbbb', 'q2', 'bc'], ['abbbb', 'q3', 'bc'], ['abbb', 'qrej', 'bbc'], ['abbb', 'qrej', 'bbc']]
+[['abbbbb', 'q1', 'c'], ['abbbbb', 'q2', 'c'], ['abbbbb', 'q3', 'c'], ['abbbb', 'qrej', 'bc'], ['abbbb', 'qrej', 'bc'], ['abbbbb', 'q1', 'c'], ['abbbbb', 'q2', 'c'], ['abbbbb', 'q3', 'c'], ['abbbb', 'qrej', 'bc'], ['abbbb', 'qrej', 'bc']]
+[['abbbbb', 'qrej', 'c'], ['abbbbbc', 'q2', '_'], ['abbbbbc', 'q3', '_'], ['abbbbb', 'qrej', 'c'], ['abbbbb', 'qrej', 'c'], ['abbbbbc', 'q2', '_'], ['abbbbbc', 'q3', '_'], ['abbbbb', 'qrej', 'c']]
+[['abbbbbc', 'qrej', '_'], ['abbbbbc_', 'qacc', '_'], ['abbbbbc', 'qrej', '_'], ['abbbbbc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "bbbcca"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 6
+Total number of transitions: 22
+String rejected after 6 transitions
+Configuration Tree:
+[['', 'q0', 'bbbcca']]
+[['b', 'q1', 'bbcca'], ['b', 'q2', 'bbcca'], ['b', 'q3', 'bbcca']]
+[['bb', 'q1', 'bcca'], ['bb', 'q2', 'bcca'], ['bb', 'q3', 'bcca'], ['b', 'qrej', 'bbcca'], ['b', 'qrej', 'bbcca']]
+[['bbb', 'q1', 'cca'], ['bbb', 'q2', 'cca'], ['bbb', 'q3', 'cca'], ['bb', 'qrej', 'bcca'], ['bb', 'qrej', 'bcca']]
+[['bbb', 'qrej', 'cca'], ['bbbc', 'q2', 'ca'], ['bbbc', 'q3', 'ca'], ['bbb', 'qrej', 'cca']]
+[['bbbcc', 'q2', 'a'], ['bbbcc', 'q3', 'a'], ['bbbc', 'qrej', 'ca']]
+[['bbbcc', 'qrej', 'a'], ['bbbcc', 'qrej', 'a']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "aaaaaacccccbbbbb"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 12
+Total number of transitions: 73
+String rejected after 12 transitions
+Configuration Tree:
+[['', 'q0', 'aaaaaacccccbbbbb']]
+[['a', 'q0', 'aaaaacccccbbbbb'], ['a', 'q1', 'aaaaacccccbbbbb'], ['a', 'q2', 'aaaaacccccbbbbb'], ['a', 'q3', 'aaaaacccccbbbbb']]
+[['aa', 'q0', 'aaaacccccbbbbb'], ['aa', 'q1', 'aaaacccccbbbbb'], ['aa', 'q2', 'aaaacccccbbbbb'], ['aa', 'q3', 'aaaacccccbbbbb'], ['a', 'qrej', 'aaaaacccccbbbbb'], ['a', 'qrej', 'aaaaacccccbbbbb'], ['a', 'qrej', 'aaaaacccccbbbbb']]
+[['aaa', 'q0', 'aaacccccbbbbb'], ['aaa', 'q1', 'aaacccccbbbbb'], ['aaa', 'q2', 'aaacccccbbbbb'], ['aaa', 'q3', 'aaacccccbbbbb'], ['aa', 'qrej', 'aaaacccccbbbbb'], ['aa', 'qrej', 'aaaacccccbbbbb'], ['aa', 'qrej', 'aaaacccccbbbbb']]
+[['aaaa', 'q0', 'aacccccbbbbb'], ['aaaa', 'q1', 'aacccccbbbbb'], ['aaaa', 'q2', 'aacccccbbbbb'], ['aaaa', 'q3', 'aacccccbbbbb'], ['aaa', 'qrej', 'aaacccccbbbbb'], ['aaa', 'qrej', 'aaacccccbbbbb'], ['aaa', 'qrej', 'aaacccccbbbbb']]
+[['aaaaa', 'q0', 'acccccbbbbb'], ['aaaaa', 'q1', 'acccccbbbbb'], ['aaaaa', 'q2', 'acccccbbbbb'], ['aaaaa', 'q3', 'acccccbbbbb'], ['aaaa', 'qrej', 'aacccccbbbbb'], ['aaaa', 'qrej', 'aacccccbbbbb'], ['aaaa', 'qrej', 'aacccccbbbbb']]
+[['aaaaaa', 'q0', 'cccccbbbbb'], ['aaaaaa', 'q1', 'cccccbbbbb'], ['aaaaaa', 'q2', 'cccccbbbbb'], ['aaaaaa', 'q3', 'cccccbbbbb'], ['aaaaa', 'qrej', 'acccccbbbbb'], ['aaaaa', 'qrej', 'acccccbbbbb'], ['aaaaa', 'qrej', 'acccccbbbbb']]
+[['aaaaaac', 'q2', 'ccccbbbbb'], ['aaaaaac', 'q3', 'ccccbbbbb'], ['aaaaaa', 'qrej', 'cccccbbbbb'], ['aaaaaac', 'q2', 'ccccbbbbb'], ['aaaaaac', 'q3', 'ccccbbbbb'], ['aaaaaa', 'qrej', 'cccccbbbbb']]
+[['aaaaaacc', 'q2', 'cccbbbbb'], ['aaaaaacc', 'q3', 'cccbbbbb'], ['aaaaaac', 'qrej', 'ccccbbbbb'], ['aaaaaacc', 'q2', 'cccbbbbb'], ['aaaaaacc', 'q3', 'cccbbbbb'], ['aaaaaac', 'qrej', 'ccccbbbbb']]
+[['aaaaaaccc', 'q2', 'ccbbbbb'], ['aaaaaaccc', 'q3', 'ccbbbbb'], ['aaaaaacc', 'qrej', 'cccbbbbb'], ['aaaaaaccc', 'q2', 'ccbbbbb'], ['aaaaaaccc', 'q3', 'ccbbbbb'], ['aaaaaacc', 'qrej', 'cccbbbbb']]
+[['aaaaaacccc', 'q2', 'cbbbbb'], ['aaaaaacccc', 'q3', 'cbbbbb'], ['aaaaaaccc', 'qrej', 'ccbbbbb'], ['aaaaaacccc', 'q2', 'cbbbbb'], ['aaaaaacccc', 'q3', 'cbbbbb'], ['aaaaaaccc', 'qrej', 'ccbbbbb']]
+[['aaaaaaccccc', 'q2', 'bbbbb'], ['aaaaaaccccc', 'q3', 'bbbbb'], ['aaaaaacccc', 'qrej', 'cbbbbb'], ['aaaaaaccccc', 'q2', 'bbbbb'], ['aaaaaaccccc', 'q3', 'bbbbb'], ['aaaaaacccc', 'qrej', 'cbbbbb']]
+[['aaaaaaccccc', 'qrej', 'bbbbb'], ['aaaaaaccccc', 'qrej', 'bbbbb'], ['aaaaaaccccc', 'qrej', 'bbbbb'], ['aaaaaaccccc', 'qrej', 'bbbbb']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "aaaaabbbbbbccccccc"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 19
+Total number of transitions: 138
+String accepted after 19 transitions
+Configuration Tree:
+[['', 'q0', 'aaaaabbbbbbccccccc']]
+[['a', 'q0', 'aaaabbbbbbccccccc'], ['a', 'q1', 'aaaabbbbbbccccccc'], ['a', 'q2', 'aaaabbbbbbccccccc'], ['a', 'q3', 'aaaabbbbbbccccccc']]
+[['aa', 'q0', 'aaabbbbbbccccccc'], ['aa', 'q1', 'aaabbbbbbccccccc'], ['aa', 'q2', 'aaabbbbbbccccccc'], ['aa', 'q3', 'aaabbbbbbccccccc'], ['a', 'qrej', 'aaaabbbbbbccccccc'], ['a', 'qrej', 'aaaabbbbbbccccccc'], ['a', 'qrej', 'aaaabbbbbbccccccc']]
+[['aaa', 'q0', 'aabbbbbbccccccc'], ['aaa', 'q1', 'aabbbbbbccccccc'], ['aaa', 'q2', 'aabbbbbbccccccc'], ['aaa', 'q3', 'aabbbbbbccccccc'], ['aa', 'qrej', 'aaabbbbbbccccccc'], ['aa', 'qrej', 'aaabbbbbbccccccc'], ['aa', 'qrej', 'aaabbbbbbccccccc']]
+[['aaaa', 'q0', 'abbbbbbccccccc'], ['aaaa', 'q1', 'abbbbbbccccccc'], ['aaaa', 'q2', 'abbbbbbccccccc'], ['aaaa', 'q3', 'abbbbbbccccccc'], ['aaa', 'qrej', 'aabbbbbbccccccc'], ['aaa', 'qrej', 'aabbbbbbccccccc'], ['aaa', 'qrej', 'aabbbbbbccccccc']]
+[['aaaaa', 'q0', 'bbbbbbccccccc'], ['aaaaa', 'q1', 'bbbbbbccccccc'], ['aaaaa', 'q2', 'bbbbbbccccccc'], ['aaaaa', 'q3', 'bbbbbbccccccc'], ['aaaa', 'qrej', 'abbbbbbccccccc'], ['aaaa', 'qrej', 'abbbbbbccccccc'], ['aaaa', 'qrej', 'abbbbbbccccccc']]
+[['aaaaab', 'q1', 'bbbbbccccccc'], ['aaaaab', 'q2', 'bbbbbccccccc'], ['aaaaab', 'q3', 'bbbbbccccccc'], ['aaaaab', 'q1', 'bbbbbccccccc'], ['aaaaab', 'q2', 'bbbbbccccccc'], ['aaaaab', 'q3', 'bbbbbccccccc'], ['aaaaa', 'qrej', 'bbbbbbccccccc'], ['aaaaa', 'qrej', 'bbbbbbccccccc']]
+[['aaaaabb', 'q1', 'bbbbccccccc'], ['aaaaabb', 'q2', 'bbbbccccccc'], ['aaaaabb', 'q3', 'bbbbccccccc'], ['aaaaab', 'qrej', 'bbbbbccccccc'], ['aaaaab', 'qrej', 'bbbbbccccccc'], ['aaaaabb', 'q1', 'bbbbccccccc'], ['aaaaabb', 'q2', 'bbbbccccccc'], ['aaaaabb', 'q3', 'bbbbccccccc'], ['aaaaab', 'qrej', 'bbbbbccccccc'], ['aaaaab', 'qrej', 'bbbbbccccccc']]
+[['aaaaabbb', 'q1', 'bbbccccccc'], ['aaaaabbb', 'q2', 'bbbccccccc'], ['aaaaabbb', 'q3', 'bbbccccccc'], ['aaaaabb', 'qrej', 'bbbbccccccc'], ['aaaaabb', 'qrej', 'bbbbccccccc'], ['aaaaabbb', 'q1', 'bbbccccccc'], ['aaaaabbb', 'q2', 'bbbccccccc'], ['aaaaabbb', 'q3', 'bbbccccccc'], ['aaaaabb', 'qrej', 'bbbbccccccc'], ['aaaaabb', 'qrej', 'bbbbccccccc']]
+[['aaaaabbbb', 'q1', 'bbccccccc'], ['aaaaabbbb', 'q2', 'bbccccccc'], ['aaaaabbbb', 'q3', 'bbccccccc'], ['aaaaabbb', 'qrej', 'bbbccccccc'], ['aaaaabbb', 'qrej', 'bbbccccccc'], ['aaaaabbbb', 'q1', 'bbccccccc'], ['aaaaabbbb', 'q2', 'bbccccccc'], ['aaaaabbbb', 'q3', 'bbccccccc'], ['aaaaabbb', 'qrej', 'bbbccccccc'], ['aaaaabbb', 'qrej', 'bbbccccccc']]
+[['aaaaabbbbb', 'q1', 'bccccccc'], ['aaaaabbbbb', 'q2', 'bccccccc'], ['aaaaabbbbb', 'q3', 'bccccccc'], ['aaaaabbbb', 'qrej', 'bbccccccc'], ['aaaaabbbb', 'qrej', 'bbccccccc'], ['aaaaabbbbb', 'q1', 'bccccccc'], ['aaaaabbbbb', 'q2', 'bccccccc'], ['aaaaabbbbb', 'q3', 'bccccccc'], ['aaaaabbbb', 'qrej', 'bbccccccc'], ['aaaaabbbb', 'qrej', 'bbccccccc']]
+[['aaaaabbbbbb', 'q1', 'ccccccc'], ['aaaaabbbbbb', 'q2', 'ccccccc'], ['aaaaabbbbbb', 'q3', 'ccccccc'], ['aaaaabbbbb', 'qrej', 'bccccccc'], ['aaaaabbbbb', 'qrej', 'bccccccc'], ['aaaaabbbbbb', 'q1', 'ccccccc'], ['aaaaabbbbbb', 'q2', 'ccccccc'], ['aaaaabbbbbb', 'q3', 'ccccccc'], ['aaaaabbbbb', 'qrej', 'bccccccc'], ['aaaaabbbbb', 'qrej', 'bccccccc']]
+[['aaaaabbbbbb', 'qrej', 'ccccccc'], ['aaaaabbbbbbc', 'q2', 'cccccc'], ['aaaaabbbbbbc', 'q3', 'cccccc'], ['aaaaabbbbbb', 'qrej', 'ccccccc'], ['aaaaabbbbbb', 'qrej', 'ccccccc'], ['aaaaabbbbbbc', 'q2', 'cccccc'], ['aaaaabbbbbbc', 'q3', 'cccccc'], ['aaaaabbbbbb', 'qrej', 'ccccccc']]
+[['aaaaabbbbbbcc', 'q2', 'ccccc'], ['aaaaabbbbbbcc', 'q3', 'ccccc'], ['aaaaabbbbbbc', 'qrej', 'cccccc'], ['aaaaabbbbbbcc', 'q2', 'ccccc'], ['aaaaabbbbbbcc', 'q3', 'ccccc'], ['aaaaabbbbbbc', 'qrej', 'cccccc']]
+[['aaaaabbbbbbccc', 'q2', 'cccc'], ['aaaaabbbbbbccc', 'q3', 'cccc'], ['aaaaabbbbbbcc', 'qrej', 'ccccc'], ['aaaaabbbbbbccc', 'q2', 'cccc'], ['aaaaabbbbbbccc', 'q3', 'cccc'], ['aaaaabbbbbbcc', 'qrej', 'ccccc']]
+[['aaaaabbbbbbcccc', 'q2', 'ccc'], ['aaaaabbbbbbcccc', 'q3', 'ccc'], ['aaaaabbbbbbccc', 'qrej', 'cccc'], ['aaaaabbbbbbcccc', 'q2', 'ccc'], ['aaaaabbbbbbcccc', 'q3', 'ccc'], ['aaaaabbbbbbccc', 'qrej', 'cccc']]
+[['aaaaabbbbbbccccc', 'q2', 'cc'], ['aaaaabbbbbbccccc', 'q3', 'cc'], ['aaaaabbbbbbcccc', 'qrej', 'ccc'], ['aaaaabbbbbbccccc', 'q2', 'cc'], ['aaaaabbbbbbccccc', 'q3', 'cc'], ['aaaaabbbbbbcccc', 'qrej', 'ccc']]
+[['aaaaabbbbbbcccccc', 'q2', 'c'], ['aaaaabbbbbbcccccc', 'q3', 'c'], ['aaaaabbbbbbccccc', 'qrej', 'cc'], ['aaaaabbbbbbcccccc', 'q2', 'c'], ['aaaaabbbbbbcccccc', 'q3', 'c'], ['aaaaabbbbbbccccc', 'qrej', 'cc']]
+[['aaaaabbbbbbccccccc', 'q2', '_'], ['aaaaabbbbbbccccccc', 'q3', '_'], ['aaaaabbbbbbcccccc', 'qrej', 'c'], ['aaaaabbbbbbccccccc', 'q2', '_'], ['aaaaabbbbbbccccccc', 'q3', '_'], ['aaaaabbbbbbcccccc', 'qrej', 'c']]
+[['aaaaabbbbbbccccccc', 'qrej', '_'], ['aaaaabbbbbbccccccc_', 'qacc', '_'], ['aaaaabbbbbbccccccc', 'qrej', '_'], ['aaaaabbbbbbccccccc_', 'qacc', '_']]
+

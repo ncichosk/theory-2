@@ -1,0 +1,393 @@
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "_"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 1
+Total number of transitions: 1
+String accepted after 1 transitions
+Configuration Tree:
+[['', 'q0', '_']]
+[['_', 'qacc', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "0"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 2
+String rejected after 2 transitions
+Configuration Tree:
+[['', 'q0', '0']]
+[['_', 'q1', '_']]
+[['_', 'qrej', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "1"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 2
+Total number of transitions: 2
+String rejected after 2 transitions
+Configuration Tree:
+[['', 'q0', '1']]
+[['_', 'q2', '_']]
+[['_', 'qrej', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "01"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 5
+Total number of transitions: 5
+String accepted after 5 transitions
+Configuration Tree:
+[['', 'q0', '01']]
+[['_', 'q1', '1']]
+[['', 'q3', '_x']]
+[['_', 'q4', 'x']]
+[['_x', 'q4', '_']]
+[['_x_', 'qacc', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "10"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 5
+Total number of transitions: 5
+String accepted after 5 transitions
+Configuration Tree:
+[['', 'q0', '10']]
+[['_', 'q2', '0']]
+[['', 'q3', '_x']]
+[['_', 'q4', 'x']]
+[['_x', 'q4', '_']]
+[['_x_', 'qacc', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "110"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 8
+Total number of transitions: 8
+String rejected after 8 transitions
+Configuration Tree:
+[['', 'q0', '110']]
+[['_', 'q2', '10']]
+[['_1', 'q2', '0']]
+[['_', 'q3', '1x']]
+[['', 'q3', '_1x']]
+[['_', 'q4', '1x']]
+[['_x', 'q2', 'x']]
+[['_xx', 'q2', '_']]
+[['_xx', 'qrej', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "0010"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 9
+Total number of transitions: 9
+String rejected after 9 transitions
+Configuration Tree:
+[['', 'q0', '0010']]
+[['_', 'q1', '010']]
+[['_0', 'q1', '10']]
+[['_', 'q3', '0x0']]
+[['', 'q3', '_0x0']]
+[['_', 'q4', '0x0']]
+[['_x', 'q1', 'x0']]
+[['_xx', 'q1', '0']]
+[['_xx0', 'q1', '_']]
+[['_xx0', 'qrej', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "10001011"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 45
+Total number of transitions: 45
+String accepted after 45 transitions
+Configuration Tree:
+[['', 'q0', '10001011']]
+[['_', 'q2', '0001011']]
+[['', 'q3', '_x001011']]
+[['_', 'q4', 'x001011']]
+[['_x', 'q4', '001011']]
+[['_xx', 'q1', '01011']]
+[['_xx0', 'q1', '1011']]
+[['_xx', 'q3', '0x011']]
+[['_x', 'q3', 'x0x011']]
+[['_', 'q3', 'xx0x011']]
+[['', 'q3', '_xx0x011']]
+[['_', 'q4', 'xx0x011']]
+[['_x', 'q4', 'x0x011']]
+[['_xx', 'q4', '0x011']]
+[['_xxx', 'q1', 'x011']]
+[['_xxxx', 'q1', '011']]
+[['_xxxx0', 'q1', '11']]
+[['_xxxx', 'q3', '0x1']]
+[['_xxx', 'q3', 'x0x1']]
+[['_xx', 'q3', 'xx0x1']]
+[['_x', 'q3', 'xxx0x1']]
+[['_', 'q3', 'xxxx0x1']]
+[['', 'q3', '_xxxx0x1']]
+[['_', 'q4', 'xxxx0x1']]
+[['_x', 'q4', 'xxx0x1']]
+[['_xx', 'q4', 'xx0x1']]
+[['_xxx', 'q4', 'x0x1']]
+[['_xxxx', 'q4', '0x1']]
+[['_xxxxx', 'q1', 'x1']]
+[['_xxxxxx', 'q1', '1']]
+[['_xxxxx', 'q3', 'xx']]
+[['_xxxx', 'q3', 'xxx']]
+[['_xxx', 'q3', 'xxxx']]
+[['_xx', 'q3', 'xxxxx']]
+[['_x', 'q3', 'xxxxxx']]
+[['_', 'q3', 'xxxxxxx']]
+[['', 'q3', '_xxxxxxx']]
+[['_', 'q4', 'xxxxxxx']]
+[['_x', 'q4', 'xxxxxx']]
+[['_xx', 'q4', 'xxxxx']]
+[['_xxx', 'q4', 'xxxx']]
+[['_xxxx', 'q4', 'xxx']]
+[['_xxxxx', 'q4', 'xx']]
+[['_xxxxxx', 'q4', 'x']]
+[['_xxxxxxx', 'q4', '_']]
+[['_xxxxxxx_', 'qacc', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "110100"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 29
+Total number of transitions: 29
+String accepted after 29 transitions
+Configuration Tree:
+[['', 'q0', '110100']]
+[['_', 'q2', '10100']]
+[['_1', 'q2', '0100']]
+[['_', 'q3', '1x100']]
+[['', 'q3', '_1x100']]
+[['_', 'q4', '1x100']]
+[['_x', 'q2', 'x100']]
+[['_xx', 'q2', '100']]
+[['_xx1', 'q2', '00']]
+[['_xx', 'q3', '1x0']]
+[['_x', 'q3', 'x1x0']]
+[['_', 'q3', 'xx1x0']]
+[['', 'q3', '_xx1x0']]
+[['_', 'q4', 'xx1x0']]
+[['_x', 'q4', 'x1x0']]
+[['_xx', 'q4', '1x0']]
+[['_xxx', 'q2', 'x0']]
+[['_xxxx', 'q2', '0']]
+[['_xxx', 'q3', 'xx']]
+[['_xx', 'q3', 'xxx']]
+[['_x', 'q3', 'xxxx']]
+[['_', 'q3', 'xxxxx']]
+[['', 'q3', '_xxxxx']]
+[['_', 'q4', 'xxxxx']]
+[['_x', 'q4', 'xxxx']]
+[['_xx', 'q4', 'xxx']]
+[['_xxx', 'q4', 'xx']]
+[['_xxxx', 'q4', 'x']]
+[['_xxxxx', 'q4', '_']]
+[['_xxxxx_', 'qacc', '_']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "1100010101010101010"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 100
+Total number of transitions: 100
+Excecution halted after 100 layers
+Configuration Tree:
+[['', 'q0', '1100010101010101010']]
+[['_', 'q2', '100010101010101010']]
+[['_1', 'q2', '00010101010101010']]
+[['_', 'q3', '1x0010101010101010']]
+[['', 'q3', '_1x0010101010101010']]
+[['_', 'q4', '1x0010101010101010']]
+[['_x', 'q2', 'x0010101010101010']]
+[['_xx', 'q2', '0010101010101010']]
+[['_x', 'q3', 'xx010101010101010']]
+[['_', 'q3', 'xxx010101010101010']]
+[['', 'q3', '_xxx010101010101010']]
+[['_', 'q4', 'xxx010101010101010']]
+[['_x', 'q4', 'xx010101010101010']]
+[['_xx', 'q4', 'x010101010101010']]
+[['_xxx', 'q4', '010101010101010']]
+[['_xxxx', 'q1', '10101010101010']]
+[['_xxx', 'q3', 'xx0101010101010']]
+[['_xx', 'q3', 'xxx0101010101010']]
+[['_x', 'q3', 'xxxx0101010101010']]
+[['_', 'q3', 'xxxxx0101010101010']]
+[['', 'q3', '_xxxxx0101010101010']]
+[['_', 'q4', 'xxxxx0101010101010']]
+[['_x', 'q4', 'xxxx0101010101010']]
+[['_xx', 'q4', 'xxx0101010101010']]
+[['_xxx', 'q4', 'xx0101010101010']]
+[['_xxxx', 'q4', 'x0101010101010']]
+[['_xxxxx', 'q4', '0101010101010']]
+[['_xxxxxx', 'q1', '101010101010']]
+[['_xxxxx', 'q3', 'xx01010101010']]
+[['_xxxx', 'q3', 'xxx01010101010']]
+[['_xxx', 'q3', 'xxxx01010101010']]
+[['_xx', 'q3', 'xxxxx01010101010']]
+[['_x', 'q3', 'xxxxxx01010101010']]
+[['_', 'q3', 'xxxxxxx01010101010']]
+[['', 'q3', '_xxxxxxx01010101010']]
+[['_', 'q4', 'xxxxxxx01010101010']]
+[['_x', 'q4', 'xxxxxx01010101010']]
+[['_xx', 'q4', 'xxxxx01010101010']]
+[['_xxx', 'q4', 'xxxx01010101010']]
+[['_xxxx', 'q4', 'xxx01010101010']]
+[['_xxxxx', 'q4', 'xx01010101010']]
+[['_xxxxxx', 'q4', 'x01010101010']]
+[['_xxxxxxx', 'q4', '01010101010']]
+[['_xxxxxxxx', 'q1', '1010101010']]
+[['_xxxxxxx', 'q3', 'xx010101010']]
+[['_xxxxxx', 'q3', 'xxx010101010']]
+[['_xxxxx', 'q3', 'xxxx010101010']]
+[['_xxxx', 'q3', 'xxxxx010101010']]
+[['_xxx', 'q3', 'xxxxxx010101010']]
+[['_xx', 'q3', 'xxxxxxx010101010']]
+[['_x', 'q3', 'xxxxxxxx010101010']]
+[['_', 'q3', 'xxxxxxxxx010101010']]
+[['', 'q3', '_xxxxxxxxx010101010']]
+[['_', 'q4', 'xxxxxxxxx010101010']]
+[['_x', 'q4', 'xxxxxxxx010101010']]
+[['_xx', 'q4', 'xxxxxxx010101010']]
+[['_xxx', 'q4', 'xxxxxx010101010']]
+[['_xxxx', 'q4', 'xxxxx010101010']]
+[['_xxxxx', 'q4', 'xxxx010101010']]
+[['_xxxxxx', 'q4', 'xxx010101010']]
+[['_xxxxxxx', 'q4', 'xx010101010']]
+[['_xxxxxxxx', 'q4', 'x010101010']]
+[['_xxxxxxxxx', 'q4', '010101010']]
+[['_xxxxxxxxxx', 'q1', '10101010']]
+[['_xxxxxxxxx', 'q3', 'xx0101010']]
+[['_xxxxxxxx', 'q3', 'xxx0101010']]
+[['_xxxxxxx', 'q3', 'xxxx0101010']]
+[['_xxxxxx', 'q3', 'xxxxx0101010']]
+[['_xxxxx', 'q3', 'xxxxxx0101010']]
+[['_xxxx', 'q3', 'xxxxxxx0101010']]
+[['_xxx', 'q3', 'xxxxxxxx0101010']]
+[['_xx', 'q3', 'xxxxxxxxx0101010']]
+[['_x', 'q3', 'xxxxxxxxxx0101010']]
+[['_', 'q3', 'xxxxxxxxxxx0101010']]
+[['', 'q3', '_xxxxxxxxxxx0101010']]
+[['_', 'q4', 'xxxxxxxxxxx0101010']]
+[['_x', 'q4', 'xxxxxxxxxx0101010']]
+[['_xx', 'q4', 'xxxxxxxxx0101010']]
+[['_xxx', 'q4', 'xxxxxxxx0101010']]
+[['_xxxx', 'q4', 'xxxxxxx0101010']]
+[['_xxxxx', 'q4', 'xxxxxx0101010']]
+[['_xxxxxx', 'q4', 'xxxxx0101010']]
+[['_xxxxxxx', 'q4', 'xxxx0101010']]
+[['_xxxxxxxx', 'q4', 'xxx0101010']]
+[['_xxxxxxxxx', 'q4', 'xx0101010']]
+[['_xxxxxxxxxx', 'q4', 'x0101010']]
+[['_xxxxxxxxxxx', 'q4', '0101010']]
+[['_xxxxxxxxxxxx', 'q1', '101010']]
+[['_xxxxxxxxxxx', 'q3', 'xx01010']]
+[['_xxxxxxxxxx', 'q3', 'xxx01010']]
+[['_xxxxxxxxx', 'q3', 'xxxx01010']]
+[['_xxxxxxxx', 'q3', 'xxxxx01010']]
+[['_xxxxxxx', 'q3', 'xxxxxx01010']]
+[['_xxxxxx', 'q3', 'xxxxxxx01010']]
+[['_xxxxx', 'q3', 'xxxxxxxx01010']]
+[['_xxxx', 'q3', 'xxxxxxxxx01010']]
+[['_xxx', 'q3', 'xxxxxxxxxx01010']]
+[['_xx', 'q3', 'xxxxxxxxxxx01010']]
+[['_x', 'q3', 'xxxxxxxxxxxx01010']]
+[['_', 'q3', 'xxxxxxxxxxxxx01010']]
+[['', 'q3', '_xxxxxxxxxxxxx01010']]
+
+Machine being run: {w | w has the same number of 0's and 1's} Deterministic
+Input string: "0000110111"
+Automatic stop at depth of 100
+
+Depth of configuration tree: 77
+Total number of transitions: 77
+String accepted after 77 transitions
+Configuration Tree:
+[['', 'q0', '0000110111']]
+[['_', 'q1', '000110111']]
+[['_0', 'q1', '00110111']]
+[['_00', 'q1', '0110111']]
+[['_000', 'q1', '110111']]
+[['_00', 'q3', '0x10111']]
+[['_0', 'q3', '00x10111']]
+[['_', 'q3', '000x10111']]
+[['', 'q3', '_000x10111']]
+[['_', 'q4', '000x10111']]
+[['_x', 'q1', '00x10111']]
+[['_x0', 'q1', '0x10111']]
+[['_x00', 'q1', 'x10111']]
+[['_x00x', 'q1', '10111']]
+[['_x00', 'q3', 'xx0111']]
+[['_x0', 'q3', '0xx0111']]
+[['_x', 'q3', '00xx0111']]
+[['_', 'q3', 'x00xx0111']]
+[['', 'q3', '_x00xx0111']]
+[['_', 'q4', 'x00xx0111']]
+[['_x', 'q4', '00xx0111']]
+[['_xx', 'q1', '0xx0111']]
+[['_xx0', 'q1', 'xx0111']]
+[['_xx0x', 'q1', 'x0111']]
+[['_xx0xx', 'q1', '0111']]
+[['_xx0xx0', 'q1', '111']]
+[['_xx0xx', 'q3', '0x11']]
+[['_xx0x', 'q3', 'x0x11']]
+[['_xx0', 'q3', 'xx0x11']]
+[['_xx', 'q3', '0xx0x11']]
+[['_x', 'q3', 'x0xx0x11']]
+[['_', 'q3', 'xx0xx0x11']]
+[['', 'q3', '_xx0xx0x11']]
+[['_', 'q4', 'xx0xx0x11']]
+[['_x', 'q4', 'x0xx0x11']]
+[['_xx', 'q4', '0xx0x11']]
+[['_xxx', 'q1', 'xx0x11']]
+[['_xxxx', 'q1', 'x0x11']]
+[['_xxxxx', 'q1', '0x11']]
+[['_xxxxx0', 'q1', 'x11']]
+[['_xxxxx0x', 'q1', '11']]
+[['_xxxxx0', 'q3', 'xx1']]
+[['_xxxxx', 'q3', '0xx1']]
+[['_xxxx', 'q3', 'x0xx1']]
+[['_xxx', 'q3', 'xx0xx1']]
+[['_xx', 'q3', 'xxx0xx1']]
+[['_x', 'q3', 'xxxx0xx1']]
+[['_', 'q3', 'xxxxx0xx1']]
+[['', 'q3', '_xxxxx0xx1']]
+[['_', 'q4', 'xxxxx0xx1']]
+[['_x', 'q4', 'xxxx0xx1']]
+[['_xx', 'q4', 'xxx0xx1']]
+[['_xxx', 'q4', 'xx0xx1']]
+[['_xxxx', 'q4', 'x0xx1']]
+[['_xxxxx', 'q4', '0xx1']]
+[['_xxxxxx', 'q1', 'xx1']]
+[['_xxxxxxx', 'q1', 'x1']]
+[['_xxxxxxxx', 'q1', '1']]
+[['_xxxxxxx', 'q3', 'xx']]
+[['_xxxxxx', 'q3', 'xxx']]
+[['_xxxxx', 'q3', 'xxxx']]
+[['_xxxx', 'q3', 'xxxxx']]
+[['_xxx', 'q3', 'xxxxxx']]
+[['_xx', 'q3', 'xxxxxxx']]
+[['_x', 'q3', 'xxxxxxxx']]
+[['_', 'q3', 'xxxxxxxxx']]
+[['', 'q3', '_xxxxxxxxx']]
+[['_', 'q4', 'xxxxxxxxx']]
+[['_x', 'q4', 'xxxxxxxx']]
+[['_xx', 'q4', 'xxxxxxx']]
+[['_xxx', 'q4', 'xxxxxx']]
+[['_xxxx', 'q4', 'xxxxx']]
+[['_xxxxx', 'q4', 'xxxx']]
+[['_xxxxxx', 'q4', 'xxx']]
+[['_xxxxxxx', 'q4', 'xx']]
+[['_xxxxxxxx', 'q4', 'x']]
+[['_xxxxxxxxx', 'q4', '_']]
+[['_xxxxxxxxx_', 'qacc', '_']]
+
