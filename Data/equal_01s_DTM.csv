@@ -10,12 +10,10 @@ q0,0,q1,_,R
 q1,0,q1,0,R
 q1,x,q1,x,R
 q1,1,q3,x,L
-q1,_,qrej,_,R
 q0,1,q2,_,R
 q2,1,q2,0,R
 q2,x,q2,x,R
 q2,0,q3,x,L
-q2,_,qrej,_,R
 q3,0,q3,0,L
 q3,1,q3,1,L
 q3,x,q3,x,L
