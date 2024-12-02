@@ -2,7 +2,7 @@
 
 import sys
 import csv
-from functions import run_machine
+from functions_ncichosk import run_machine
 
 def main():
 

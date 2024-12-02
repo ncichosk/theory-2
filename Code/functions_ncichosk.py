@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from copy import layer_copy, tuple_copy
+from tree_copy_funcs_ncichosk import layer_copy, tuple_copy
 
 def run_machine(input, rules, start, accept, reject, max_depth):
     depth = 0
