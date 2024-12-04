@@ -1,10 +1,81 @@
 Machine being run: a plus
+Input string: "_"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 1
+Total number of transitions: 1
+String rejected after 1 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', '_']]
+[['', 'qreject', '_']]
+
+Machine being run: a plus
+Input string: "a"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 2
+Total number of transitions: 4
+String accepted after 2 transitions
+Average non-determinism: 2.0
+Configuration Tree:
+[['', 'q1', 'a']]
+[['a', 'q1', '_'], ['a', 'q2', '_']]
+[['a', 'qreject', '_'], ['', 'q3', 'a_']]
+
+Machine being run: a plus
+Input string: "aa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 3
+Total number of transitions: 7
+String accepted after 3 transitions
+Average non-determinism: 2.3333333333333335
+Configuration Tree:
+[['', 'q1', 'aa']]
+[['a', 'q1', 'a'], ['a', 'q2', 'a']]
+[['aa', 'q1', '_'], ['aa', 'q2', '_'], ['a', 'qreject', 'a']]
+[['aa', 'qreject', '_'], ['a', 'q3', 'a_']]
+
+Machine being run: a plus
+Input string: "aaa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 4
+Total number of transitions: 10
+String accepted after 4 transitions
+Average non-determinism: 2.5
+Configuration Tree:
+[['', 'q1', 'aaa']]
+[['a', 'q1', 'aa'], ['a', 'q2', 'aa']]
+[['aa', 'q1', 'a'], ['aa', 'q2', 'a'], ['a', 'qreject', 'aa']]
+[['aaa', 'q1', '_'], ['aaa', 'q2', '_'], ['aa', 'qreject', 'a']]
+[['aaa', 'qreject', '_'], ['aa', 'q3', 'a_']]
+
+Machine being run: a plus
+Input string: "aaaa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 5
+Total number of transitions: 13
+String accepted after 5 transitions
+Average non-determinism: 2.6
+Configuration Tree:
+[['', 'q1', 'aaaa']]
+[['a', 'q1', 'aaa'], ['a', 'q2', 'aaa']]
+[['aa', 'q1', 'aa'], ['aa', 'q2', 'aa'], ['a', 'qreject', 'aaa']]
+[['aaa', 'q1', 'a'], ['aaa', 'q2', 'a'], ['aa', 'qreject', 'aa']]
+[['aaaa', 'q1', '_'], ['aaaa', 'q2', '_'], ['aaa', 'qreject', 'a']]
+[['aaaa', 'qreject', '_'], ['aaa', 'q3', 'a_']]
+
+Machine being run: a plus
 Input string: "aaaaa"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 6
 Total number of transitions: 16
 String accepted after 6 transitions
+Average non-determinism: 2.6666666666666665
 Configuration Tree:
 [['', 'q1', 'aaaaa']]
 [['a', 'q1', 'aaaa'], ['a', 'q2', 'aaaa']]
@@ -15,38 +86,121 @@ Configuration Tree:
 [['aaaaa', 'qreject', '_'], ['aaaa', 'q3', 'a_']]
 
 Machine being run: a plus
-Input string: "aaac"
-Automatic stop at depth of 100
+Input string: "b"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 1
+Total number of transitions: 1
+String rejected after 1 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'b']]
+[['', 'qreject', 'b']]
+
+Machine being run: a plus
+Input string: "aab"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 3
+Total number of transitions: 7
+String rejected after 3 transitions
+Average non-determinism: 2.3333333333333335
+Configuration Tree:
+[['', 'q1', 'aab']]
+[['a', 'q1', 'ab'], ['a', 'q2', 'ab']]
+[['aa', 'q1', 'b'], ['aa', 'q2', 'b'], ['a', 'qreject', 'ab']]
+[['aa', 'qreject', 'b'], ['aa', 'qreject', 'b']]
+
+Machine being run: a plus
+Input string: "aaabbbbb"
+Automatic stop at depth of 25
 
 Depth of configuration tree: 4
 Total number of transitions: 10
 String rejected after 4 transitions
+Average non-determinism: 2.5
 Configuration Tree:
-[['', 'q1', 'aaac']]
-[['a', 'q1', 'aac'], ['a', 'q2', 'aac']]
-[['aa', 'q1', 'ac'], ['aa', 'q2', 'ac'], ['a', 'qreject', 'aac']]
-[['aaa', 'q1', 'c'], ['aaa', 'q2', 'c'], ['aa', 'qreject', 'ac']]
-[['aaa', 'qreject', 'c'], ['aaa', 'qreject', 'c']]
+[['', 'q1', 'aaabbbbb']]
+[['a', 'q1', 'aabbbbb'], ['a', 'q2', 'aabbbbb']]
+[['aa', 'q1', 'abbbbb'], ['aa', 'q2', 'abbbbb'], ['a', 'qreject', 'aabbbbb']]
+[['aaa', 'q1', 'bbbbb'], ['aaa', 'q2', 'bbbbb'], ['aa', 'qreject', 'abbbbb']]
+[['aaa', 'qreject', 'bbbbb'], ['aaa', 'qreject', 'bbbbb']]
 
 Machine being run: a plus
-Input string: "a"
-Automatic stop at depth of 100
+Input string: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+Automatic stop at depth of 25
 
-Depth of configuration tree: 2
-Total number of transitions: 4
-String accepted after 2 transitions
+Depth of configuration tree: 25
+Total number of transitions: 74
+Excecution halted after 25 layers
+Average non-determinism: 2.96
 Configuration Tree:
-[['', 'q1', 'a']]
-[['a', 'q1', '_'], ['a', 'q2', '_']]
-[['a', 'qreject', '_'], ['', 'q3', 'a_']]
+[['', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['a', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['a', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['a', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaa', 'qreject', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+
+Machine being run: a plus
+Input string: "bbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 1
+Total number of transitions: 1
+String rejected after 1 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'bbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['', 'qreject', 'bbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+
+Machine being run: a plus
+Input string: "aaaaaaabbbb"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 8
+Total number of transitions: 22
+String rejected after 8 transitions
+Average non-determinism: 2.75
+Configuration Tree:
+[['', 'q1', 'aaaaaaabbbb']]
+[['a', 'q1', 'aaaaaabbbb'], ['a', 'q2', 'aaaaaabbbb']]
+[['aa', 'q1', 'aaaaabbbb'], ['aa', 'q2', 'aaaaabbbb'], ['a', 'qreject', 'aaaaaabbbb']]
+[['aaa', 'q1', 'aaaabbbb'], ['aaa', 'q2', 'aaaabbbb'], ['aa', 'qreject', 'aaaaabbbb']]
+[['aaaa', 'q1', 'aaabbbb'], ['aaaa', 'q2', 'aaabbbb'], ['aaa', 'qreject', 'aaaabbbb']]
+[['aaaaa', 'q1', 'aabbbb'], ['aaaaa', 'q2', 'aabbbb'], ['aaaa', 'qreject', 'aaabbbb']]
+[['aaaaaa', 'q1', 'abbbb'], ['aaaaaa', 'q2', 'abbbb'], ['aaaaa', 'qreject', 'aabbbb']]
+[['aaaaaaa', 'q1', 'bbbb'], ['aaaaaaa', 'q2', 'bbbb'], ['aaaaaa', 'qreject', 'abbbb']]
+[['aaaaaaa', 'qreject', 'bbbb'], ['aaaaaaa', 'qreject', 'bbbb']]
 
 Machine being run: a plus
 Input string: "aaaaaaaaa"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 10
 Total number of transitions: 28
 String accepted after 10 transitions
+Average non-determinism: 2.8
 Configuration Tree:
 [['', 'q1', 'aaaaaaaaa']]
 [['a', 'q1', 'aaaaaaaa'], ['a', 'q2', 'aaaaaaaa']]
@@ -61,41 +215,59 @@ Configuration Tree:
 [['aaaaaaaaa', 'qreject', '_'], ['aaaaaaaa', 'q3', 'a_']]
 
 Machine being run: a plus
-Input string: "cccaaacca"
-Automatic stop at depth of 100
+Input string: "abababababababab"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 2
+Total number of transitions: 4
+String rejected after 2 transitions
+Average non-determinism: 2.0
+Configuration Tree:
+[['', 'q1', 'abababababababab']]
+[['a', 'q1', 'bababababababab'], ['a', 'q2', 'bababababababab']]
+[['a', 'qreject', 'bababababababab'], ['a', 'qreject', 'bababababababab']]
+
+Machine being run: a plus
+Input string: "bbbbbbbaaaaaaaaaaaaaaa"
+Automatic stop at depth of 25
 
 Depth of configuration tree: 1
 Total number of transitions: 1
 String rejected after 1 transitions
+Average non-determinism: 1.0
 Configuration Tree:
-[['', 'q1', 'cccaaacca']]
-[['', 'qreject', 'cccaaacca']]
+[['', 'q1', 'bbbbbbbaaaaaaaaaaaaaaa']]
+[['', 'qreject', 'bbbbbbbaaaaaaaaaaaaaaa']]
 
 Machine being run: a plus
-Input string: "aaaaaaca"
-Automatic stop at depth of 100
+Input string: "aaaaaaaaaaaaaaaaaa"
+Automatic stop at depth of 25
 
-Depth of configuration tree: 7
-Total number of transitions: 19
-String rejected after 7 transitions
+Depth of configuration tree: 19
+Total number of transitions: 55
+String accepted after 19 transitions
+Average non-determinism: 2.8947368421052633
 Configuration Tree:
-[['', 'q1', 'aaaaaaca']]
-[['a', 'q1', 'aaaaaca'], ['a', 'q2', 'aaaaaca']]
-[['aa', 'q1', 'aaaaca'], ['aa', 'q2', 'aaaaca'], ['a', 'qreject', 'aaaaaca']]
-[['aaa', 'q1', 'aaaca'], ['aaa', 'q2', 'aaaca'], ['aa', 'qreject', 'aaaaca']]
-[['aaaa', 'q1', 'aaca'], ['aaaa', 'q2', 'aaca'], ['aaa', 'qreject', 'aaaca']]
-[['aaaaa', 'q1', 'aca'], ['aaaaa', 'q2', 'aca'], ['aaaa', 'qreject', 'aaca']]
-[['aaaaaa', 'q1', 'ca'], ['aaaaaa', 'q2', 'ca'], ['aaaaa', 'qreject', 'aca']]
-[['aaaaaa', 'qreject', 'ca'], ['aaaaaa', 'qreject', 'ca']]
+[['', 'q1', 'aaaaaaaaaaaaaaaaaa']]
+[['a', 'q1', 'aaaaaaaaaaaaaaaaa'], ['a', 'q2', 'aaaaaaaaaaaaaaaaa']]
+[['aa', 'q1', 'aaaaaaaaaaaaaaaa'], ['aa', 'q2', 'aaaaaaaaaaaaaaaa'], ['a', 'qreject', 'aaaaaaaaaaaaaaaaa']]
+[['aaa', 'q1', 'aaaaaaaaaaaaaaa'], ['aaa', 'q2', 'aaaaaaaaaaaaaaa'], ['aa', 'qreject', 'aaaaaaaaaaaaaaaa']]
+[['aaaa', 'q1', 'aaaaaaaaaaaaaa'], ['aaaa', 'q2', 'aaaaaaaaaaaaaa'], ['aaa', 'qreject', 'aaaaaaaaaaaaaaa']]
+[['aaaaa', 'q1', 'aaaaaaaaaaaaa'], ['aaaaa', 'q2', 'aaaaaaaaaaaaa'], ['aaaa', 'qreject', 'aaaaaaaaaaaaaa']]
+[['aaaaaa', 'q1', 'aaaaaaaaaaaa'], ['aaaaaa', 'q2', 'aaaaaaaaaaaa'], ['aaaaa', 'qreject', 'aaaaaaaaaaaaa']]
+[['aaaaaaa', 'q1', 'aaaaaaaaaaa'], ['aaaaaaa', 'q2', 'aaaaaaaaaaa'], ['aaaaaa', 'qreject', 'aaaaaaaaaaaa']]
+[['aaaaaaaa', 'q1', 'aaaaaaaaaa'], ['aaaaaaaa', 'q2', 'aaaaaaaaaa'], ['aaaaaaa', 'qreject', 'aaaaaaaaaaa']]
+[['aaaaaaaaa', 'q1', 'aaaaaaaaa'], ['aaaaaaaaa', 'q2', 'aaaaaaaaa'], ['aaaaaaaa', 'qreject', 'aaaaaaaaaa']]
+[['aaaaaaaaaa', 'q1', 'aaaaaaaa'], ['aaaaaaaaaa', 'q2', 'aaaaaaaa'], ['aaaaaaaaa', 'qreject', 'aaaaaaaaa']]
+[['aaaaaaaaaaa', 'q1', 'aaaaaaa'], ['aaaaaaaaaaa', 'q2', 'aaaaaaa'], ['aaaaaaaaaa', 'qreject', 'aaaaaaaa']]
+[['aaaaaaaaaaaa', 'q1', 'aaaaaa'], ['aaaaaaaaaaaa', 'q2', 'aaaaaa'], ['aaaaaaaaaaa', 'qreject', 'aaaaaaa']]
+[['aaaaaaaaaaaaa', 'q1', 'aaaaa'], ['aaaaaaaaaaaaa', 'q2', 'aaaaa'], ['aaaaaaaaaaaa', 'qreject', 'aaaaaa']]
+[['aaaaaaaaaaaaaa', 'q1', 'aaaa'], ['aaaaaaaaaaaaaa', 'q2', 'aaaa'], ['aaaaaaaaaaaaa', 'qreject', 'aaaaa']]
+[['aaaaaaaaaaaaaaa', 'q1', 'aaa'], ['aaaaaaaaaaaaaaa', 'q2', 'aaa'], ['aaaaaaaaaaaaaa', 'qreject', 'aaaa']]
+[['aaaaaaaaaaaaaaaa', 'q1', 'aa'], ['aaaaaaaaaaaaaaaa', 'q2', 'aa'], ['aaaaaaaaaaaaaaa', 'qreject', 'aaa']]
+[['aaaaaaaaaaaaaaaaa', 'q1', 'a'], ['aaaaaaaaaaaaaaaaa', 'q2', 'a'], ['aaaaaaaaaaaaaaaa', 'qreject', 'aa']]
+[['aaaaaaaaaaaaaaaaaa', 'q1', '_'], ['aaaaaaaaaaaaaaaaaa', 'q2', '_'], ['aaaaaaaaaaaaaaaaa', 'qreject', 'a']]
+[['aaaaaaaaaaaaaaaaaa', 'qreject', '_'], ['aaaaaaaaaaaaaaaaa', 'q3', 'a_']]
 
-Machine being run: a plus
-Input string: "_"
-Automatic stop at depth of 100
-
-Depth of configuration tree: 1
-Total number of transitions: 1
-String rejected after 1 transitions
-Configuration Tree:
-[['', 'q1', '_']]
-[['', 'qreject', '_']]
-
+Average determinism for inputted strings: 2.6736842105263157
+This represents the average number of possible states at each step of the machine.

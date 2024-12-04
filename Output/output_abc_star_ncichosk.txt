@@ -1,10 +1,11 @@
 Machine being run: a*b*c* Nondeterministic
 Input string: "_"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 2
 Total number of transitions: 2
 String accepted after 2 transitions
+Average non-determinism: 1.0
 Configuration Tree:
 [['', 'q0', '_']]
 [['_', 'q3', '_']]
@@ -12,11 +13,12 @@ Configuration Tree:
 
 Machine being run: a*b*c* Nondeterministic
 Input string: "a"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 2
 Total number of transitions: 8
 String accepted after 2 transitions
+Average non-determinism: 4.0
 Configuration Tree:
 [['', 'q0', 'a']]
 [['a', 'q0', '_'], ['a', 'q1', '_'], ['a', 'q2', '_'], ['a', 'q3', '_']]
@@ -24,11 +26,12 @@ Configuration Tree:
 
 Machine being run: a*b*c* Nondeterministic
 Input string: "b"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 2
 Total number of transitions: 6
 String accepted after 2 transitions
+Average non-determinism: 3.0
 Configuration Tree:
 [['', 'q0', 'b']]
 [['b', 'q1', '_'], ['b', 'q2', '_'], ['b', 'q3', '_']]
@@ -36,11 +39,12 @@ Configuration Tree:
 
 Machine being run: a*b*c* Nondeterministic
 Input string: "c"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 2
 Total number of transitions: 4
 String accepted after 2 transitions
+Average non-determinism: 2.0
 Configuration Tree:
 [['', 'q0', 'c']]
 [['c', 'q2', '_'], ['c', 'q3', '_']]
@@ -48,11 +52,12 @@ Configuration Tree:
 
 Machine being run: a*b*c* Nondeterministic
 Input string: "ab"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 3
 Total number of transitions: 18
 String accepted after 3 transitions
+Average non-determinism: 6.0
 Configuration Tree:
 [['', 'q0', 'ab']]
 [['a', 'q0', 'b'], ['a', 'q1', 'b'], ['a', 'q2', 'b'], ['a', 'q3', 'b']]
@@ -60,25 +65,13 @@ Configuration Tree:
 [['ab', 'qrej', '_'], ['ab', 'qrej', '_'], ['ab_', 'qacc', '_'], ['ab', 'qrej', '_'], ['ab', 'qrej', '_'], ['ab_', 'qacc', '_']]
 
 Machine being run: a*b*c* Nondeterministic
-Input string: "bc"
-Automatic stop at depth of 100
-
-Depth of configuration tree: 3
-Total number of transitions: 9
-String accepted after 3 transitions
-Configuration Tree:
-[['', 'q0', 'bc']]
-[['b', 'q1', 'c'], ['b', 'q2', 'c'], ['b', 'q3', 'c']]
-[['b', 'qrej', 'c'], ['bc', 'q2', '_'], ['bc', 'q3', '_'], ['b', 'qrej', 'c']]
-[['bc', 'qrej', '_'], ['bc_', 'qacc', '_']]
-
-Machine being run: a*b*c* Nondeterministic
 Input string: "ac"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 3
 Total number of transitions: 14
 String accepted after 3 transitions
+Average non-determinism: 4.666666666666667
 Configuration Tree:
 [['', 'q0', 'ac']]
 [['a', 'q0', 'c'], ['a', 'q1', 'c'], ['a', 'q2', 'c'], ['a', 'q3', 'c']]
@@ -86,104 +79,314 @@ Configuration Tree:
 [['ac', 'qrej', '_'], ['ac_', 'qacc', '_'], ['ac', 'qrej', '_'], ['ac_', 'qacc', '_']]
 
 Machine being run: a*b*c* Nondeterministic
-Input string: "aaacccb"
-Automatic stop at depth of 100
+Input string: "bc"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 3
+Total number of transitions: 9
+String accepted after 3 transitions
+Average non-determinism: 3.0
+Configuration Tree:
+[['', 'q0', 'bc']]
+[['b', 'q1', 'c'], ['b', 'q2', 'c'], ['b', 'q3', 'c']]
+[['b', 'qrej', 'c'], ['bc', 'q2', '_'], ['bc', 'q3', '_'], ['b', 'qrej', 'c']]
+[['bc', 'qrej', '_'], ['bc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "ba"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 2
+Total number of transitions: 6
+String rejected after 2 transitions
+Average non-determinism: 3.0
+Configuration Tree:
+[['', 'q0', 'ba']]
+[['b', 'q1', 'a'], ['b', 'q2', 'a'], ['b', 'q3', 'a']]
+[['b', 'qrej', 'a'], ['b', 'qrej', 'a'], ['b', 'qrej', 'a']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "ca"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 2
+Total number of transitions: 4
+String rejected after 2 transitions
+Average non-determinism: 2.0
+Configuration Tree:
+[['', 'q0', 'ca']]
+[['c', 'q2', 'a'], ['c', 'q3', 'a']]
+[['c', 'qrej', 'a'], ['c', 'qrej', 'a']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "cb"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 2
+Total number of transitions: 4
+String rejected after 2 transitions
+Average non-determinism: 2.0
+Configuration Tree:
+[['', 'q0', 'cb']]
+[['c', 'q2', 'b'], ['c', 'q3', 'b']]
+[['c', 'qrej', 'b'], ['c', 'qrej', 'b']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "abc"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 4
+Total number of transitions: 24
+String accepted after 4 transitions
+Average non-determinism: 6.0
+Configuration Tree:
+[['', 'q0', 'abc']]
+[['a', 'q0', 'bc'], ['a', 'q1', 'bc'], ['a', 'q2', 'bc'], ['a', 'q3', 'bc']]
+[['ab', 'q1', 'c'], ['ab', 'q2', 'c'], ['ab', 'q3', 'c'], ['ab', 'q1', 'c'], ['ab', 'q2', 'c'], ['ab', 'q3', 'c'], ['a', 'qrej', 'bc'], ['a', 'qrej', 'bc']]
+[['ab', 'qrej', 'c'], ['abc', 'q2', '_'], ['abc', 'q3', '_'], ['ab', 'qrej', 'c'], ['ab', 'qrej', 'c'], ['abc', 'q2', '_'], ['abc', 'q3', '_'], ['ab', 'qrej', 'c']]
+[['abc', 'qrej', '_'], ['abc_', 'qacc', '_'], ['abc', 'qrej', '_'], ['abc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "abc"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 4
+Total number of transitions: 24
+String accepted after 4 transitions
+Average non-determinism: 6.0
+Configuration Tree:
+[['', 'q0', 'abc']]
+[['a', 'q0', 'bc'], ['a', 'q1', 'bc'], ['a', 'q2', 'bc'], ['a', 'q3', 'bc']]
+[['ab', 'q1', 'c'], ['ab', 'q2', 'c'], ['ab', 'q3', 'c'], ['ab', 'q1', 'c'], ['ab', 'q2', 'c'], ['ab', 'q3', 'c'], ['a', 'qrej', 'bc'], ['a', 'qrej', 'bc']]
+[['ab', 'qrej', 'c'], ['abc', 'q2', '_'], ['abc', 'q3', '_'], ['ab', 'qrej', 'c'], ['ab', 'qrej', 'c'], ['abc', 'q2', '_'], ['abc', 'q3', '_'], ['ab', 'qrej', 'c']]
+[['abc', 'qrej', '_'], ['abc_', 'qacc', '_'], ['abc', 'qrej', '_'], ['abc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "aabbcc"
+Automatic stop at depth of 25
 
 Depth of configuration tree: 7
-Total number of transitions: 40
-String rejected after 7 transitions
+Total number of transitions: 47
+String accepted after 7 transitions
+Average non-determinism: 6.714285714285714
 Configuration Tree:
-[['', 'q0', 'aaacccb']]
-[['a', 'q0', 'aacccb'], ['a', 'q1', 'aacccb'], ['a', 'q2', 'aacccb'], ['a', 'q3', 'aacccb']]
-[['aa', 'q0', 'acccb'], ['aa', 'q1', 'acccb'], ['aa', 'q2', 'acccb'], ['aa', 'q3', 'acccb'], ['a', 'qrej', 'aacccb'], ['a', 'qrej', 'aacccb'], ['a', 'qrej', 'aacccb']]
-[['aaa', 'q0', 'cccb'], ['aaa', 'q1', 'cccb'], ['aaa', 'q2', 'cccb'], ['aaa', 'q3', 'cccb'], ['aa', 'qrej', 'acccb'], ['aa', 'qrej', 'acccb'], ['aa', 'qrej', 'acccb']]
-[['aaac', 'q2', 'ccb'], ['aaac', 'q3', 'ccb'], ['aaa', 'qrej', 'cccb'], ['aaac', 'q2', 'ccb'], ['aaac', 'q3', 'ccb'], ['aaa', 'qrej', 'cccb']]
-[['aaacc', 'q2', 'cb'], ['aaacc', 'q3', 'cb'], ['aaac', 'qrej', 'ccb'], ['aaacc', 'q2', 'cb'], ['aaacc', 'q3', 'cb'], ['aaac', 'qrej', 'ccb']]
-[['aaaccc', 'q2', 'b'], ['aaaccc', 'q3', 'b'], ['aaacc', 'qrej', 'cb'], ['aaaccc', 'q2', 'b'], ['aaaccc', 'q3', 'b'], ['aaacc', 'qrej', 'cb']]
-[['aaaccc', 'qrej', 'b'], ['aaaccc', 'qrej', 'b'], ['aaaccc', 'qrej', 'b'], ['aaaccc', 'qrej', 'b']]
+[['', 'q0', 'aabbcc']]
+[['a', 'q0', 'abbcc'], ['a', 'q1', 'abbcc'], ['a', 'q2', 'abbcc'], ['a', 'q3', 'abbcc']]
+[['aa', 'q0', 'bbcc'], ['aa', 'q1', 'bbcc'], ['aa', 'q2', 'bbcc'], ['aa', 'q3', 'bbcc'], ['a', 'qrej', 'abbcc'], ['a', 'qrej', 'abbcc'], ['a', 'qrej', 'abbcc']]
+[['aab', 'q1', 'bcc'], ['aab', 'q2', 'bcc'], ['aab', 'q3', 'bcc'], ['aab', 'q1', 'bcc'], ['aab', 'q2', 'bcc'], ['aab', 'q3', 'bcc'], ['aa', 'qrej', 'bbcc'], ['aa', 'qrej', 'bbcc']]
+[['aabb', 'q1', 'cc'], ['aabb', 'q2', 'cc'], ['aabb', 'q3', 'cc'], ['aab', 'qrej', 'bcc'], ['aab', 'qrej', 'bcc'], ['aabb', 'q1', 'cc'], ['aabb', 'q2', 'cc'], ['aabb', 'q3', 'cc'], ['aab', 'qrej', 'bcc'], ['aab', 'qrej', 'bcc']]
+[['aabb', 'qrej', 'cc'], ['aabbc', 'q2', 'c'], ['aabbc', 'q3', 'c'], ['aabb', 'qrej', 'cc'], ['aabb', 'qrej', 'cc'], ['aabbc', 'q2', 'c'], ['aabbc', 'q3', 'c'], ['aabb', 'qrej', 'cc']]
+[['aabbcc', 'q2', '_'], ['aabbcc', 'q3', '_'], ['aabbc', 'qrej', 'c'], ['aabbcc', 'q2', '_'], ['aabbcc', 'q3', '_'], ['aabbc', 'qrej', 'c']]
+[['aabbcc', 'qrej', '_'], ['aabbcc_', 'qacc', '_'], ['aabbcc', 'qrej', '_'], ['aabbcc_', 'qacc', '_']]
 
 Machine being run: a*b*c* Nondeterministic
-Input string: "abbbbbc"
-Automatic stop at depth of 100
+Input string: "bbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+Automatic stop at depth of 25
 
-Depth of configuration tree: 8
-Total number of transitions: 64
-String accepted after 8 transitions
+Depth of configuration tree: 3
+Total number of transitions: 11
+String rejected after 3 transitions
+Average non-determinism: 3.6666666666666665
 Configuration Tree:
-[['', 'q0', 'abbbbbc']]
-[['a', 'q0', 'bbbbbc'], ['a', 'q1', 'bbbbbc'], ['a', 'q2', 'bbbbbc'], ['a', 'q3', 'bbbbbc']]
-[['ab', 'q1', 'bbbbc'], ['ab', 'q2', 'bbbbc'], ['ab', 'q3', 'bbbbc'], ['ab', 'q1', 'bbbbc'], ['ab', 'q2', 'bbbbc'], ['ab', 'q3', 'bbbbc'], ['a', 'qrej', 'bbbbbc'], ['a', 'qrej', 'bbbbbc']]
-[['abb', 'q1', 'bbbc'], ['abb', 'q2', 'bbbc'], ['abb', 'q3', 'bbbc'], ['ab', 'qrej', 'bbbbc'], ['ab', 'qrej', 'bbbbc'], ['abb', 'q1', 'bbbc'], ['abb', 'q2', 'bbbc'], ['abb', 'q3', 'bbbc'], ['ab', 'qrej', 'bbbbc'], ['ab', 'qrej', 'bbbbc']]
-[['abbb', 'q1', 'bbc'], ['abbb', 'q2', 'bbc'], ['abbb', 'q3', 'bbc'], ['abb', 'qrej', 'bbbc'], ['abb', 'qrej', 'bbbc'], ['abbb', 'q1', 'bbc'], ['abbb', 'q2', 'bbc'], ['abbb', 'q3', 'bbc'], ['abb', 'qrej', 'bbbc'], ['abb', 'qrej', 'bbbc']]
-[['abbbb', 'q1', 'bc'], ['abbbb', 'q2', 'bc'], ['abbbb', 'q3', 'bc'], ['abbb', 'qrej', 'bbc'], ['abbb', 'qrej', 'bbc'], ['abbbb', 'q1', 'bc'], ['abbbb', 'q2', 'bc'], ['abbbb', 'q3', 'bc'], ['abbb', 'qrej', 'bbc'], ['abbb', 'qrej', 'bbc']]
-[['abbbbb', 'q1', 'c'], ['abbbbb', 'q2', 'c'], ['abbbbb', 'q3', 'c'], ['abbbb', 'qrej', 'bc'], ['abbbb', 'qrej', 'bc'], ['abbbbb', 'q1', 'c'], ['abbbbb', 'q2', 'c'], ['abbbbb', 'q3', 'c'], ['abbbb', 'qrej', 'bc'], ['abbbb', 'qrej', 'bc']]
-[['abbbbb', 'qrej', 'c'], ['abbbbbc', 'q2', '_'], ['abbbbbc', 'q3', '_'], ['abbbbb', 'qrej', 'c'], ['abbbbb', 'qrej', 'c'], ['abbbbbc', 'q2', '_'], ['abbbbbc', 'q3', '_'], ['abbbbb', 'qrej', 'c']]
-[['abbbbbc', 'qrej', '_'], ['abbbbbc_', 'qacc', '_'], ['abbbbbc', 'qrej', '_'], ['abbbbbc_', 'qacc', '_']]
+[['', 'q0', 'bbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['b', 'q1', 'baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['b', 'q2', 'baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['b', 'q3', 'baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['bb', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['bb', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['bb', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['b', 'qrej', 'baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['b', 'qrej', 'baaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['bb', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['bb', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['bb', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
 
 Machine being run: a*b*c* Nondeterministic
-Input string: "bbbcca"
-Automatic stop at depth of 100
+Input string: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+Automatic stop at depth of 25
 
-Depth of configuration tree: 6
-Total number of transitions: 22
-String rejected after 6 transitions
+Depth of configuration tree: 25
+Total number of transitions: 172
+Excecution halted after 25 layers
+Average non-determinism: 6.88
 Configuration Tree:
-[['', 'q0', 'bbbcca']]
-[['b', 'q1', 'bbcca'], ['b', 'q2', 'bbcca'], ['b', 'q3', 'bbcca']]
-[['bb', 'q1', 'bcca'], ['bb', 'q2', 'bcca'], ['bb', 'q3', 'bcca'], ['b', 'qrej', 'bbcca'], ['b', 'qrej', 'bbcca']]
-[['bbb', 'q1', 'cca'], ['bbb', 'q2', 'cca'], ['bbb', 'q3', 'cca'], ['bb', 'qrej', 'bcca'], ['bb', 'qrej', 'bcca']]
-[['bbb', 'qrej', 'cca'], ['bbbc', 'q2', 'ca'], ['bbbc', 'q3', 'ca'], ['bbb', 'qrej', 'cca']]
-[['bbbcc', 'q2', 'a'], ['bbbcc', 'q3', 'a'], ['bbbc', 'qrej', 'ca']]
-[['bbbcc', 'qrej', 'a'], ['bbbcc', 'qrej', 'a']]
+[['', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['a', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['a', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['a', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['a', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['a', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['a', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['a', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaaaa', 'q0', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaaa', 'q2', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaaa', 'q3', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'], ['aaaaaaaaaaaaaaaaaaaaaaaa', 'qrej', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
 
 Machine being run: a*b*c* Nondeterministic
-Input string: "aaaaaacccccbbbbb"
-Automatic stop at depth of 100
+Input string: "aaaaaabbbbbbbaaaaa"
+Automatic stop at depth of 25
 
-Depth of configuration tree: 12
-Total number of transitions: 73
-String rejected after 12 transitions
+Depth of configuration tree: 14
+Total number of transitions: 113
+String rejected after 14 transitions
+Average non-determinism: 8.071428571428571
 Configuration Tree:
-[['', 'q0', 'aaaaaacccccbbbbb']]
-[['a', 'q0', 'aaaaacccccbbbbb'], ['a', 'q1', 'aaaaacccccbbbbb'], ['a', 'q2', 'aaaaacccccbbbbb'], ['a', 'q3', 'aaaaacccccbbbbb']]
-[['aa', 'q0', 'aaaacccccbbbbb'], ['aa', 'q1', 'aaaacccccbbbbb'], ['aa', 'q2', 'aaaacccccbbbbb'], ['aa', 'q3', 'aaaacccccbbbbb'], ['a', 'qrej', 'aaaaacccccbbbbb'], ['a', 'qrej', 'aaaaacccccbbbbb'], ['a', 'qrej', 'aaaaacccccbbbbb']]
-[['aaa', 'q0', 'aaacccccbbbbb'], ['aaa', 'q1', 'aaacccccbbbbb'], ['aaa', 'q2', 'aaacccccbbbbb'], ['aaa', 'q3', 'aaacccccbbbbb'], ['aa', 'qrej', 'aaaacccccbbbbb'], ['aa', 'qrej', 'aaaacccccbbbbb'], ['aa', 'qrej', 'aaaacccccbbbbb']]
-[['aaaa', 'q0', 'aacccccbbbbb'], ['aaaa', 'q1', 'aacccccbbbbb'], ['aaaa', 'q2', 'aacccccbbbbb'], ['aaaa', 'q3', 'aacccccbbbbb'], ['aaa', 'qrej', 'aaacccccbbbbb'], ['aaa', 'qrej', 'aaacccccbbbbb'], ['aaa', 'qrej', 'aaacccccbbbbb']]
-[['aaaaa', 'q0', 'acccccbbbbb'], ['aaaaa', 'q1', 'acccccbbbbb'], ['aaaaa', 'q2', 'acccccbbbbb'], ['aaaaa', 'q3', 'acccccbbbbb'], ['aaaa', 'qrej', 'aacccccbbbbb'], ['aaaa', 'qrej', 'aacccccbbbbb'], ['aaaa', 'qrej', 'aacccccbbbbb']]
-[['aaaaaa', 'q0', 'cccccbbbbb'], ['aaaaaa', 'q1', 'cccccbbbbb'], ['aaaaaa', 'q2', 'cccccbbbbb'], ['aaaaaa', 'q3', 'cccccbbbbb'], ['aaaaa', 'qrej', 'acccccbbbbb'], ['aaaaa', 'qrej', 'acccccbbbbb'], ['aaaaa', 'qrej', 'acccccbbbbb']]
-[['aaaaaac', 'q2', 'ccccbbbbb'], ['aaaaaac', 'q3', 'ccccbbbbb'], ['aaaaaa', 'qrej', 'cccccbbbbb'], ['aaaaaac', 'q2', 'ccccbbbbb'], ['aaaaaac', 'q3', 'ccccbbbbb'], ['aaaaaa', 'qrej', 'cccccbbbbb']]
-[['aaaaaacc', 'q2', 'cccbbbbb'], ['aaaaaacc', 'q3', 'cccbbbbb'], ['aaaaaac', 'qrej', 'ccccbbbbb'], ['aaaaaacc', 'q2', 'cccbbbbb'], ['aaaaaacc', 'q3', 'cccbbbbb'], ['aaaaaac', 'qrej', 'ccccbbbbb']]
-[['aaaaaaccc', 'q2', 'ccbbbbb'], ['aaaaaaccc', 'q3', 'ccbbbbb'], ['aaaaaacc', 'qrej', 'cccbbbbb'], ['aaaaaaccc', 'q2', 'ccbbbbb'], ['aaaaaaccc', 'q3', 'ccbbbbb'], ['aaaaaacc', 'qrej', 'cccbbbbb']]
-[['aaaaaacccc', 'q2', 'cbbbbb'], ['aaaaaacccc', 'q3', 'cbbbbb'], ['aaaaaaccc', 'qrej', 'ccbbbbb'], ['aaaaaacccc', 'q2', 'cbbbbb'], ['aaaaaacccc', 'q3', 'cbbbbb'], ['aaaaaaccc', 'qrej', 'ccbbbbb']]
-[['aaaaaaccccc', 'q2', 'bbbbb'], ['aaaaaaccccc', 'q3', 'bbbbb'], ['aaaaaacccc', 'qrej', 'cbbbbb'], ['aaaaaaccccc', 'q2', 'bbbbb'], ['aaaaaaccccc', 'q3', 'bbbbb'], ['aaaaaacccc', 'qrej', 'cbbbbb']]
-[['aaaaaaccccc', 'qrej', 'bbbbb'], ['aaaaaaccccc', 'qrej', 'bbbbb'], ['aaaaaaccccc', 'qrej', 'bbbbb'], ['aaaaaaccccc', 'qrej', 'bbbbb']]
+[['', 'q0', 'aaaaaabbbbbbbaaaaa']]
+[['a', 'q0', 'aaaaabbbbbbbaaaaa'], ['a', 'q1', 'aaaaabbbbbbbaaaaa'], ['a', 'q2', 'aaaaabbbbbbbaaaaa'], ['a', 'q3', 'aaaaabbbbbbbaaaaa']]
+[['aa', 'q0', 'aaaabbbbbbbaaaaa'], ['aa', 'q1', 'aaaabbbbbbbaaaaa'], ['aa', 'q2', 'aaaabbbbbbbaaaaa'], ['aa', 'q3', 'aaaabbbbbbbaaaaa'], ['a', 'qrej', 'aaaaabbbbbbbaaaaa'], ['a', 'qrej', 'aaaaabbbbbbbaaaaa'], ['a', 'qrej', 'aaaaabbbbbbbaaaaa']]
+[['aaa', 'q0', 'aaabbbbbbbaaaaa'], ['aaa', 'q1', 'aaabbbbbbbaaaaa'], ['aaa', 'q2', 'aaabbbbbbbaaaaa'], ['aaa', 'q3', 'aaabbbbbbbaaaaa'], ['aa', 'qrej', 'aaaabbbbbbbaaaaa'], ['aa', 'qrej', 'aaaabbbbbbbaaaaa'], ['aa', 'qrej', 'aaaabbbbbbbaaaaa']]
+[['aaaa', 'q0', 'aabbbbbbbaaaaa'], ['aaaa', 'q1', 'aabbbbbbbaaaaa'], ['aaaa', 'q2', 'aabbbbbbbaaaaa'], ['aaaa', 'q3', 'aabbbbbbbaaaaa'], ['aaa', 'qrej', 'aaabbbbbbbaaaaa'], ['aaa', 'qrej', 'aaabbbbbbbaaaaa'], ['aaa', 'qrej', 'aaabbbbbbbaaaaa']]
+[['aaaaa', 'q0', 'abbbbbbbaaaaa'], ['aaaaa', 'q1', 'abbbbbbbaaaaa'], ['aaaaa', 'q2', 'abbbbbbbaaaaa'], ['aaaaa', 'q3', 'abbbbbbbaaaaa'], ['aaaa', 'qrej', 'aabbbbbbbaaaaa'], ['aaaa', 'qrej', 'aabbbbbbbaaaaa'], ['aaaa', 'qrej', 'aabbbbbbbaaaaa']]
+[['aaaaaa', 'q0', 'bbbbbbbaaaaa'], ['aaaaaa', 'q1', 'bbbbbbbaaaaa'], ['aaaaaa', 'q2', 'bbbbbbbaaaaa'], ['aaaaaa', 'q3', 'bbbbbbbaaaaa'], ['aaaaa', 'qrej', 'abbbbbbbaaaaa'], ['aaaaa', 'qrej', 'abbbbbbbaaaaa'], ['aaaaa', 'qrej', 'abbbbbbbaaaaa']]
+[['aaaaaab', 'q1', 'bbbbbbaaaaa'], ['aaaaaab', 'q2', 'bbbbbbaaaaa'], ['aaaaaab', 'q3', 'bbbbbbaaaaa'], ['aaaaaab', 'q1', 'bbbbbbaaaaa'], ['aaaaaab', 'q2', 'bbbbbbaaaaa'], ['aaaaaab', 'q3', 'bbbbbbaaaaa'], ['aaaaaa', 'qrej', 'bbbbbbbaaaaa'], ['aaaaaa', 'qrej', 'bbbbbbbaaaaa']]
+[['aaaaaabb', 'q1', 'bbbbbaaaaa'], ['aaaaaabb', 'q2', 'bbbbbaaaaa'], ['aaaaaabb', 'q3', 'bbbbbaaaaa'], ['aaaaaab', 'qrej', 'bbbbbbaaaaa'], ['aaaaaab', 'qrej', 'bbbbbbaaaaa'], ['aaaaaabb', 'q1', 'bbbbbaaaaa'], ['aaaaaabb', 'q2', 'bbbbbaaaaa'], ['aaaaaabb', 'q3', 'bbbbbaaaaa'], ['aaaaaab', 'qrej', 'bbbbbbaaaaa'], ['aaaaaab', 'qrej', 'bbbbbbaaaaa']]
+[['aaaaaabbb', 'q1', 'bbbbaaaaa'], ['aaaaaabbb', 'q2', 'bbbbaaaaa'], ['aaaaaabbb', 'q3', 'bbbbaaaaa'], ['aaaaaabb', 'qrej', 'bbbbbaaaaa'], ['aaaaaabb', 'qrej', 'bbbbbaaaaa'], ['aaaaaabbb', 'q1', 'bbbbaaaaa'], ['aaaaaabbb', 'q2', 'bbbbaaaaa'], ['aaaaaabbb', 'q3', 'bbbbaaaaa'], ['aaaaaabb', 'qrej', 'bbbbbaaaaa'], ['aaaaaabb', 'qrej', 'bbbbbaaaaa']]
+[['aaaaaabbbb', 'q1', 'bbbaaaaa'], ['aaaaaabbbb', 'q2', 'bbbaaaaa'], ['aaaaaabbbb', 'q3', 'bbbaaaaa'], ['aaaaaabbb', 'qrej', 'bbbbaaaaa'], ['aaaaaabbb', 'qrej', 'bbbbaaaaa'], ['aaaaaabbbb', 'q1', 'bbbaaaaa'], ['aaaaaabbbb', 'q2', 'bbbaaaaa'], ['aaaaaabbbb', 'q3', 'bbbaaaaa'], ['aaaaaabbb', 'qrej', 'bbbbaaaaa'], ['aaaaaabbb', 'qrej', 'bbbbaaaaa']]
+[['aaaaaabbbbb', 'q1', 'bbaaaaa'], ['aaaaaabbbbb', 'q2', 'bbaaaaa'], ['aaaaaabbbbb', 'q3', 'bbaaaaa'], ['aaaaaabbbb', 'qrej', 'bbbaaaaa'], ['aaaaaabbbb', 'qrej', 'bbbaaaaa'], ['aaaaaabbbbb', 'q1', 'bbaaaaa'], ['aaaaaabbbbb', 'q2', 'bbaaaaa'], ['aaaaaabbbbb', 'q3', 'bbaaaaa'], ['aaaaaabbbb', 'qrej', 'bbbaaaaa'], ['aaaaaabbbb', 'qrej', 'bbbaaaaa']]
+[['aaaaaabbbbbb', 'q1', 'baaaaa'], ['aaaaaabbbbbb', 'q2', 'baaaaa'], ['aaaaaabbbbbb', 'q3', 'baaaaa'], ['aaaaaabbbbb', 'qrej', 'bbaaaaa'], ['aaaaaabbbbb', 'qrej', 'bbaaaaa'], ['aaaaaabbbbbb', 'q1', 'baaaaa'], ['aaaaaabbbbbb', 'q2', 'baaaaa'], ['aaaaaabbbbbb', 'q3', 'baaaaa'], ['aaaaaabbbbb', 'qrej', 'bbaaaaa'], ['aaaaaabbbbb', 'qrej', 'bbaaaaa']]
+[['aaaaaabbbbbbb', 'q1', 'aaaaa'], ['aaaaaabbbbbbb', 'q2', 'aaaaa'], ['aaaaaabbbbbbb', 'q3', 'aaaaa'], ['aaaaaabbbbbb', 'qrej', 'baaaaa'], ['aaaaaabbbbbb', 'qrej', 'baaaaa'], ['aaaaaabbbbbbb', 'q1', 'aaaaa'], ['aaaaaabbbbbbb', 'q2', 'aaaaa'], ['aaaaaabbbbbbb', 'q3', 'aaaaa'], ['aaaaaabbbbbb', 'qrej', 'baaaaa'], ['aaaaaabbbbbb', 'qrej', 'baaaaa']]
+[['aaaaaabbbbbbb', 'qrej', 'aaaaa'], ['aaaaaabbbbbbb', 'qrej', 'aaaaa'], ['aaaaaabbbbbbb', 'qrej', 'aaaaa'], ['aaaaaabbbbbbb', 'qrej', 'aaaaa'], ['aaaaaabbbbbbb', 'qrej', 'aaaaa'], ['aaaaaabbbbbbb', 'qrej', 'aaaaa']]
 
 Machine being run: a*b*c* Nondeterministic
-Input string: "aaaaabbbbbbccccccc"
-Automatic stop at depth of 100
+Input string: "aaaaaaaaaacccccccccccc"
+Automatic stop at depth of 25
 
-Depth of configuration tree: 19
-Total number of transitions: 138
-String accepted after 19 transitions
+Depth of configuration tree: 23
+Total number of transitions: 143
+String accepted after 23 transitions
+Average non-determinism: 6.217391304347826
 Configuration Tree:
-[['', 'q0', 'aaaaabbbbbbccccccc']]
-[['a', 'q0', 'aaaabbbbbbccccccc'], ['a', 'q1', 'aaaabbbbbbccccccc'], ['a', 'q2', 'aaaabbbbbbccccccc'], ['a', 'q3', 'aaaabbbbbbccccccc']]
-[['aa', 'q0', 'aaabbbbbbccccccc'], ['aa', 'q1', 'aaabbbbbbccccccc'], ['aa', 'q2', 'aaabbbbbbccccccc'], ['aa', 'q3', 'aaabbbbbbccccccc'], ['a', 'qrej', 'aaaabbbbbbccccccc'], ['a', 'qrej', 'aaaabbbbbbccccccc'], ['a', 'qrej', 'aaaabbbbbbccccccc']]
-[['aaa', 'q0', 'aabbbbbbccccccc'], ['aaa', 'q1', 'aabbbbbbccccccc'], ['aaa', 'q2', 'aabbbbbbccccccc'], ['aaa', 'q3', 'aabbbbbbccccccc'], ['aa', 'qrej', 'aaabbbbbbccccccc'], ['aa', 'qrej', 'aaabbbbbbccccccc'], ['aa', 'qrej', 'aaabbbbbbccccccc']]
-[['aaaa', 'q0', 'abbbbbbccccccc'], ['aaaa', 'q1', 'abbbbbbccccccc'], ['aaaa', 'q2', 'abbbbbbccccccc'], ['aaaa', 'q3', 'abbbbbbccccccc'], ['aaa', 'qrej', 'aabbbbbbccccccc'], ['aaa', 'qrej', 'aabbbbbbccccccc'], ['aaa', 'qrej', 'aabbbbbbccccccc']]
-[['aaaaa', 'q0', 'bbbbbbccccccc'], ['aaaaa', 'q1', 'bbbbbbccccccc'], ['aaaaa', 'q2', 'bbbbbbccccccc'], ['aaaaa', 'q3', 'bbbbbbccccccc'], ['aaaa', 'qrej', 'abbbbbbccccccc'], ['aaaa', 'qrej', 'abbbbbbccccccc'], ['aaaa', 'qrej', 'abbbbbbccccccc']]
-[['aaaaab', 'q1', 'bbbbbccccccc'], ['aaaaab', 'q2', 'bbbbbccccccc'], ['aaaaab', 'q3', 'bbbbbccccccc'], ['aaaaab', 'q1', 'bbbbbccccccc'], ['aaaaab', 'q2', 'bbbbbccccccc'], ['aaaaab', 'q3', 'bbbbbccccccc'], ['aaaaa', 'qrej', 'bbbbbbccccccc'], ['aaaaa', 'qrej', 'bbbbbbccccccc']]
-[['aaaaabb', 'q1', 'bbbbccccccc'], ['aaaaabb', 'q2', 'bbbbccccccc'], ['aaaaabb', 'q3', 'bbbbccccccc'], ['aaaaab', 'qrej', 'bbbbbccccccc'], ['aaaaab', 'qrej', 'bbbbbccccccc'], ['aaaaabb', 'q1', 'bbbbccccccc'], ['aaaaabb', 'q2', 'bbbbccccccc'], ['aaaaabb', 'q3', 'bbbbccccccc'], ['aaaaab', 'qrej', 'bbbbbccccccc'], ['aaaaab', 'qrej', 'bbbbbccccccc']]
-[['aaaaabbb', 'q1', 'bbbccccccc'], ['aaaaabbb', 'q2', 'bbbccccccc'], ['aaaaabbb', 'q3', 'bbbccccccc'], ['aaaaabb', 'qrej', 'bbbbccccccc'], ['aaaaabb', 'qrej', 'bbbbccccccc'], ['aaaaabbb', 'q1', 'bbbccccccc'], ['aaaaabbb', 'q2', 'bbbccccccc'], ['aaaaabbb', 'q3', 'bbbccccccc'], ['aaaaabb', 'qrej', 'bbbbccccccc'], ['aaaaabb', 'qrej', 'bbbbccccccc']]
-[['aaaaabbbb', 'q1', 'bbccccccc'], ['aaaaabbbb', 'q2', 'bbccccccc'], ['aaaaabbbb', 'q3', 'bbccccccc'], ['aaaaabbb', 'qrej', 'bbbccccccc'], ['aaaaabbb', 'qrej', 'bbbccccccc'], ['aaaaabbbb', 'q1', 'bbccccccc'], ['aaaaabbbb', 'q2', 'bbccccccc'], ['aaaaabbbb', 'q3', 'bbccccccc'], ['aaaaabbb', 'qrej', 'bbbccccccc'], ['aaaaabbb', 'qrej', 'bbbccccccc']]
-[['aaaaabbbbb', 'q1', 'bccccccc'], ['aaaaabbbbb', 'q2', 'bccccccc'], ['aaaaabbbbb', 'q3', 'bccccccc'], ['aaaaabbbb', 'qrej', 'bbccccccc'], ['aaaaabbbb', 'qrej', 'bbccccccc'], ['aaaaabbbbb', 'q1', 'bccccccc'], ['aaaaabbbbb', 'q2', 'bccccccc'], ['aaaaabbbbb', 'q3', 'bccccccc'], ['aaaaabbbb', 'qrej', 'bbccccccc'], ['aaaaabbbb', 'qrej', 'bbccccccc']]
-[['aaaaabbbbbb', 'q1', 'ccccccc'], ['aaaaabbbbbb', 'q2', 'ccccccc'], ['aaaaabbbbbb', 'q3', 'ccccccc'], ['aaaaabbbbb', 'qrej', 'bccccccc'], ['aaaaabbbbb', 'qrej', 'bccccccc'], ['aaaaabbbbbb', 'q1', 'ccccccc'], ['aaaaabbbbbb', 'q2', 'ccccccc'], ['aaaaabbbbbb', 'q3', 'ccccccc'], ['aaaaabbbbb', 'qrej', 'bccccccc'], ['aaaaabbbbb', 'qrej', 'bccccccc']]
-[['aaaaabbbbbb', 'qrej', 'ccccccc'], ['aaaaabbbbbbc', 'q2', 'cccccc'], ['aaaaabbbbbbc', 'q3', 'cccccc'], ['aaaaabbbbbb', 'qrej', 'ccccccc'], ['aaaaabbbbbb', 'qrej', 'ccccccc'], ['aaaaabbbbbbc', 'q2', 'cccccc'], ['aaaaabbbbbbc', 'q3', 'cccccc'], ['aaaaabbbbbb', 'qrej', 'ccccccc']]
-[['aaaaabbbbbbcc', 'q2', 'ccccc'], ['aaaaabbbbbbcc', 'q3', 'ccccc'], ['aaaaabbbbbbc', 'qrej', 'cccccc'], ['aaaaabbbbbbcc', 'q2', 'ccccc'], ['aaaaabbbbbbcc', 'q3', 'ccccc'], ['aaaaabbbbbbc', 'qrej', 'cccccc']]
-[['aaaaabbbbbbccc', 'q2', 'cccc'], ['aaaaabbbbbbccc', 'q3', 'cccc'], ['aaaaabbbbbbcc', 'qrej', 'ccccc'], ['aaaaabbbbbbccc', 'q2', 'cccc'], ['aaaaabbbbbbccc', 'q3', 'cccc'], ['aaaaabbbbbbcc', 'qrej', 'ccccc']]
-[['aaaaabbbbbbcccc', 'q2', 'ccc'], ['aaaaabbbbbbcccc', 'q3', 'ccc'], ['aaaaabbbbbbccc', 'qrej', 'cccc'], ['aaaaabbbbbbcccc', 'q2', 'ccc'], ['aaaaabbbbbbcccc', 'q3', 'ccc'], ['aaaaabbbbbbccc', 'qrej', 'cccc']]
-[['aaaaabbbbbbccccc', 'q2', 'cc'], ['aaaaabbbbbbccccc', 'q3', 'cc'], ['aaaaabbbbbbcccc', 'qrej', 'ccc'], ['aaaaabbbbbbccccc', 'q2', 'cc'], ['aaaaabbbbbbccccc', 'q3', 'cc'], ['aaaaabbbbbbcccc', 'qrej', 'ccc']]
-[['aaaaabbbbbbcccccc', 'q2', 'c'], ['aaaaabbbbbbcccccc', 'q3', 'c'], ['aaaaabbbbbbccccc', 'qrej', 'cc'], ['aaaaabbbbbbcccccc', 'q2', 'c'], ['aaaaabbbbbbcccccc', 'q3', 'c'], ['aaaaabbbbbbccccc', 'qrej', 'cc']]
-[['aaaaabbbbbbccccccc', 'q2', '_'], ['aaaaabbbbbbccccccc', 'q3', '_'], ['aaaaabbbbbbcccccc', 'qrej', 'c'], ['aaaaabbbbbbccccccc', 'q2', '_'], ['aaaaabbbbbbccccccc', 'q3', '_'], ['aaaaabbbbbbcccccc', 'qrej', 'c']]
-[['aaaaabbbbbbccccccc', 'qrej', '_'], ['aaaaabbbbbbccccccc_', 'qacc', '_'], ['aaaaabbbbbbccccccc', 'qrej', '_'], ['aaaaabbbbbbccccccc_', 'qacc', '_']]
+[['', 'q0', 'aaaaaaaaaacccccccccccc']]
+[['a', 'q0', 'aaaaaaaaacccccccccccc'], ['a', 'q1', 'aaaaaaaaacccccccccccc'], ['a', 'q2', 'aaaaaaaaacccccccccccc'], ['a', 'q3', 'aaaaaaaaacccccccccccc']]
+[['aa', 'q0', 'aaaaaaaacccccccccccc'], ['aa', 'q1', 'aaaaaaaacccccccccccc'], ['aa', 'q2', 'aaaaaaaacccccccccccc'], ['aa', 'q3', 'aaaaaaaacccccccccccc'], ['a', 'qrej', 'aaaaaaaaacccccccccccc'], ['a', 'qrej', 'aaaaaaaaacccccccccccc'], ['a', 'qrej', 'aaaaaaaaacccccccccccc']]
+[['aaa', 'q0', 'aaaaaaacccccccccccc'], ['aaa', 'q1', 'aaaaaaacccccccccccc'], ['aaa', 'q2', 'aaaaaaacccccccccccc'], ['aaa', 'q3', 'aaaaaaacccccccccccc'], ['aa', 'qrej', 'aaaaaaaacccccccccccc'], ['aa', 'qrej', 'aaaaaaaacccccccccccc'], ['aa', 'qrej', 'aaaaaaaacccccccccccc']]
+[['aaaa', 'q0', 'aaaaaacccccccccccc'], ['aaaa', 'q1', 'aaaaaacccccccccccc'], ['aaaa', 'q2', 'aaaaaacccccccccccc'], ['aaaa', 'q3', 'aaaaaacccccccccccc'], ['aaa', 'qrej', 'aaaaaaacccccccccccc'], ['aaa', 'qrej', 'aaaaaaacccccccccccc'], ['aaa', 'qrej', 'aaaaaaacccccccccccc']]
+[['aaaaa', 'q0', 'aaaaacccccccccccc'], ['aaaaa', 'q1', 'aaaaacccccccccccc'], ['aaaaa', 'q2', 'aaaaacccccccccccc'], ['aaaaa', 'q3', 'aaaaacccccccccccc'], ['aaaa', 'qrej', 'aaaaaacccccccccccc'], ['aaaa', 'qrej', 'aaaaaacccccccccccc'], ['aaaa', 'qrej', 'aaaaaacccccccccccc']]
+[['aaaaaa', 'q0', 'aaaacccccccccccc'], ['aaaaaa', 'q1', 'aaaacccccccccccc'], ['aaaaaa', 'q2', 'aaaacccccccccccc'], ['aaaaaa', 'q3', 'aaaacccccccccccc'], ['aaaaa', 'qrej', 'aaaaacccccccccccc'], ['aaaaa', 'qrej', 'aaaaacccccccccccc'], ['aaaaa', 'qrej', 'aaaaacccccccccccc']]
+[['aaaaaaa', 'q0', 'aaacccccccccccc'], ['aaaaaaa', 'q1', 'aaacccccccccccc'], ['aaaaaaa', 'q2', 'aaacccccccccccc'], ['aaaaaaa', 'q3', 'aaacccccccccccc'], ['aaaaaa', 'qrej', 'aaaacccccccccccc'], ['aaaaaa', 'qrej', 'aaaacccccccccccc'], ['aaaaaa', 'qrej', 'aaaacccccccccccc']]
+[['aaaaaaaa', 'q0', 'aacccccccccccc'], ['aaaaaaaa', 'q1', 'aacccccccccccc'], ['aaaaaaaa', 'q2', 'aacccccccccccc'], ['aaaaaaaa', 'q3', 'aacccccccccccc'], ['aaaaaaa', 'qrej', 'aaacccccccccccc'], ['aaaaaaa', 'qrej', 'aaacccccccccccc'], ['aaaaaaa', 'qrej', 'aaacccccccccccc']]
+[['aaaaaaaaa', 'q0', 'acccccccccccc'], ['aaaaaaaaa', 'q1', 'acccccccccccc'], ['aaaaaaaaa', 'q2', 'acccccccccccc'], ['aaaaaaaaa', 'q3', 'acccccccccccc'], ['aaaaaaaa', 'qrej', 'aacccccccccccc'], ['aaaaaaaa', 'qrej', 'aacccccccccccc'], ['aaaaaaaa', 'qrej', 'aacccccccccccc']]
+[['aaaaaaaaaa', 'q0', 'cccccccccccc'], ['aaaaaaaaaa', 'q1', 'cccccccccccc'], ['aaaaaaaaaa', 'q2', 'cccccccccccc'], ['aaaaaaaaaa', 'q3', 'cccccccccccc'], ['aaaaaaaaa', 'qrej', 'acccccccccccc'], ['aaaaaaaaa', 'qrej', 'acccccccccccc'], ['aaaaaaaaa', 'qrej', 'acccccccccccc']]
+[['aaaaaaaaaac', 'q2', 'ccccccccccc'], ['aaaaaaaaaac', 'q3', 'ccccccccccc'], ['aaaaaaaaaa', 'qrej', 'cccccccccccc'], ['aaaaaaaaaac', 'q2', 'ccccccccccc'], ['aaaaaaaaaac', 'q3', 'ccccccccccc'], ['aaaaaaaaaa', 'qrej', 'cccccccccccc']]
+[['aaaaaaaaaacc', 'q2', 'cccccccccc'], ['aaaaaaaaaacc', 'q3', 'cccccccccc'], ['aaaaaaaaaac', 'qrej', 'ccccccccccc'], ['aaaaaaaaaacc', 'q2', 'cccccccccc'], ['aaaaaaaaaacc', 'q3', 'cccccccccc'], ['aaaaaaaaaac', 'qrej', 'ccccccccccc']]
+[['aaaaaaaaaaccc', 'q2', 'ccccccccc'], ['aaaaaaaaaaccc', 'q3', 'ccccccccc'], ['aaaaaaaaaacc', 'qrej', 'cccccccccc'], ['aaaaaaaaaaccc', 'q2', 'ccccccccc'], ['aaaaaaaaaaccc', 'q3', 'ccccccccc'], ['aaaaaaaaaacc', 'qrej', 'cccccccccc']]
+[['aaaaaaaaaacccc', 'q2', 'cccccccc'], ['aaaaaaaaaacccc', 'q3', 'cccccccc'], ['aaaaaaaaaaccc', 'qrej', 'ccccccccc'], ['aaaaaaaaaacccc', 'q2', 'cccccccc'], ['aaaaaaaaaacccc', 'q3', 'cccccccc'], ['aaaaaaaaaaccc', 'qrej', 'ccccccccc']]
+[['aaaaaaaaaaccccc', 'q2', 'ccccccc'], ['aaaaaaaaaaccccc', 'q3', 'ccccccc'], ['aaaaaaaaaacccc', 'qrej', 'cccccccc'], ['aaaaaaaaaaccccc', 'q2', 'ccccccc'], ['aaaaaaaaaaccccc', 'q3', 'ccccccc'], ['aaaaaaaaaacccc', 'qrej', 'cccccccc']]
+[['aaaaaaaaaacccccc', 'q2', 'cccccc'], ['aaaaaaaaaacccccc', 'q3', 'cccccc'], ['aaaaaaaaaaccccc', 'qrej', 'ccccccc'], ['aaaaaaaaaacccccc', 'q2', 'cccccc'], ['aaaaaaaaaacccccc', 'q3', 'cccccc'], ['aaaaaaaaaaccccc', 'qrej', 'ccccccc']]
+[['aaaaaaaaaaccccccc', 'q2', 'ccccc'], ['aaaaaaaaaaccccccc', 'q3', 'ccccc'], ['aaaaaaaaaacccccc', 'qrej', 'cccccc'], ['aaaaaaaaaaccccccc', 'q2', 'ccccc'], ['aaaaaaaaaaccccccc', 'q3', 'ccccc'], ['aaaaaaaaaacccccc', 'qrej', 'cccccc']]
+[['aaaaaaaaaacccccccc', 'q2', 'cccc'], ['aaaaaaaaaacccccccc', 'q3', 'cccc'], ['aaaaaaaaaaccccccc', 'qrej', 'ccccc'], ['aaaaaaaaaacccccccc', 'q2', 'cccc'], ['aaaaaaaaaacccccccc', 'q3', 'cccc'], ['aaaaaaaaaaccccccc', 'qrej', 'ccccc']]
+[['aaaaaaaaaaccccccccc', 'q2', 'ccc'], ['aaaaaaaaaaccccccccc', 'q3', 'ccc'], ['aaaaaaaaaacccccccc', 'qrej', 'cccc'], ['aaaaaaaaaaccccccccc', 'q2', 'ccc'], ['aaaaaaaaaaccccccccc', 'q3', 'ccc'], ['aaaaaaaaaacccccccc', 'qrej', 'cccc']]
+[['aaaaaaaaaacccccccccc', 'q2', 'cc'], ['aaaaaaaaaacccccccccc', 'q3', 'cc'], ['aaaaaaaaaaccccccccc', 'qrej', 'ccc'], ['aaaaaaaaaacccccccccc', 'q2', 'cc'], ['aaaaaaaaaacccccccccc', 'q3', 'cc'], ['aaaaaaaaaaccccccccc', 'qrej', 'ccc']]
+[['aaaaaaaaaaccccccccccc', 'q2', 'c'], ['aaaaaaaaaaccccccccccc', 'q3', 'c'], ['aaaaaaaaaacccccccccc', 'qrej', 'cc'], ['aaaaaaaaaaccccccccccc', 'q2', 'c'], ['aaaaaaaaaaccccccccccc', 'q3', 'c'], ['aaaaaaaaaacccccccccc', 'qrej', 'cc']]
+[['aaaaaaaaaacccccccccccc', 'q2', '_'], ['aaaaaaaaaacccccccccccc', 'q3', '_'], ['aaaaaaaaaaccccccccccc', 'qrej', 'c'], ['aaaaaaaaaacccccccccccc', 'q2', '_'], ['aaaaaaaaaacccccccccccc', 'q3', '_'], ['aaaaaaaaaaccccccccccc', 'qrej', 'c']]
+[['aaaaaaaaaacccccccccccc', 'qrej', '_'], ['aaaaaaaaaacccccccccccc_', 'qacc', '_'], ['aaaaaaaaaacccccccccccc', 'qrej', '_'], ['aaaaaaaaaacccccccccccc_', 'qacc', '_']]
 
+Machine being run: a*b*c* Nondeterministic
+Input string: "aaaaaaaaaaaaaaabbbbbbbbbbbbbbbc"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 25
+Total number of transitions: 200
+Excecution halted after 25 layers
+Average non-determinism: 8.0
+Configuration Tree:
+[['', 'q0', 'aaaaaaaaaaaaaaabbbbbbbbbbbbbbbc']]
+[['a', 'q0', 'aaaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['a', 'q1', 'aaaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['a', 'q2', 'aaaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['a', 'q3', 'aaaaaaaaaaaaaabbbbbbbbbbbbbbbc']]
+[['aa', 'q0', 'aaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aa', 'q1', 'aaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aa', 'q2', 'aaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aa', 'q3', 'aaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['a', 'qrej', 'aaaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['a', 'qrej', 'aaaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['a', 'qrej', 'aaaaaaaaaaaaaabbbbbbbbbbbbbbbc']]
+[['aaa', 'q0', 'aaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaa', 'q1', 'aaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaa', 'q2', 'aaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaa', 'q3', 'aaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aa', 'qrej', 'aaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aa', 'qrej', 'aaaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aa', 'qrej', 'aaaaaaaaaaaaabbbbbbbbbbbbbbbc']]
+[['aaaa', 'q0', 'aaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaa', 'q1', 'aaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaa', 'q2', 'aaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaa', 'q3', 'aaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaa', 'qrej', 'aaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaa', 'qrej', 'aaaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaa', 'qrej', 'aaaaaaaaaaaabbbbbbbbbbbbbbbc']]
+[['aaaaa', 'q0', 'aaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaa', 'q1', 'aaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaa', 'q2', 'aaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaa', 'q3', 'aaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaa', 'qrej', 'aaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaa', 'qrej', 'aaaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaa', 'qrej', 'aaaaaaaaaaabbbbbbbbbbbbbbbc']]
+[['aaaaaa', 'q0', 'aaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaa', 'q1', 'aaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaa', 'q2', 'aaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaa', 'q3', 'aaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaa', 'qrej', 'aaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaa', 'qrej', 'aaaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaa', 'qrej', 'aaaaaaaaaabbbbbbbbbbbbbbbc']]
+[['aaaaaaa', 'q0', 'aaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaa', 'q1', 'aaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaa', 'q2', 'aaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaa', 'q3', 'aaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaa', 'qrej', 'aaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaa', 'qrej', 'aaaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaa', 'qrej', 'aaaaaaaaabbbbbbbbbbbbbbbc']]
+[['aaaaaaaa', 'q0', 'aaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaa', 'q1', 'aaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaa', 'q2', 'aaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaa', 'q3', 'aaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaa', 'qrej', 'aaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaa', 'qrej', 'aaaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaa', 'qrej', 'aaaaaaaabbbbbbbbbbbbbbbc']]
+[['aaaaaaaaa', 'q0', 'aaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaa', 'q1', 'aaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaa', 'q2', 'aaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaa', 'q3', 'aaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaa', 'qrej', 'aaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaa', 'qrej', 'aaaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaa', 'qrej', 'aaaaaaabbbbbbbbbbbbbbbc']]
+[['aaaaaaaaaa', 'q0', 'aaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaa', 'q1', 'aaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaa', 'q2', 'aaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaa', 'q3', 'aaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaa', 'qrej', 'aaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaa', 'qrej', 'aaaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaa', 'qrej', 'aaaaaabbbbbbbbbbbbbbbc']]
+[['aaaaaaaaaaa', 'q0', 'aaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaa', 'q1', 'aaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaa', 'q2', 'aaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaa', 'q3', 'aaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaa', 'qrej', 'aaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaa', 'qrej', 'aaaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaa', 'qrej', 'aaaaabbbbbbbbbbbbbbbc']]
+[['aaaaaaaaaaaa', 'q0', 'aaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaa', 'q1', 'aaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaa', 'q2', 'aaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaa', 'q3', 'aaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaa', 'qrej', 'aaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaa', 'qrej', 'aaaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaa', 'qrej', 'aaaabbbbbbbbbbbbbbbc']]
+[['aaaaaaaaaaaaa', 'q0', 'aabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaa', 'q1', 'aabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaa', 'q2', 'aabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaa', 'q3', 'aabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaa', 'qrej', 'aaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaa', 'qrej', 'aaabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaa', 'qrej', 'aaabbbbbbbbbbbbbbbc']]
+[['aaaaaaaaaaaaaa', 'q0', 'abbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaa', 'q1', 'abbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaa', 'q2', 'abbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaa', 'q3', 'abbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaa', 'qrej', 'aabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaa', 'qrej', 'aabbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaa', 'qrej', 'aabbbbbbbbbbbbbbbc']]
+[['aaaaaaaaaaaaaaa', 'q0', 'bbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaa', 'q1', 'bbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaa', 'q2', 'bbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaa', 'q3', 'bbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaa', 'qrej', 'abbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaa', 'qrej', 'abbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaa', 'qrej', 'abbbbbbbbbbbbbbbc']]
+[['aaaaaaaaaaaaaaab', 'q1', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'q2', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'q3', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'q1', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'q2', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'q3', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaa', 'qrej', 'bbbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaa', 'qrej', 'bbbbbbbbbbbbbbbc']]
+[['aaaaaaaaaaaaaaabb', 'q1', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'q2', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'q3', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'qrej', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'qrej', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'q1', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'q2', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'q3', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'qrej', 'bbbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaab', 'qrej', 'bbbbbbbbbbbbbbc']]
+[['aaaaaaaaaaaaaaabbb', 'q1', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'q2', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'q3', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'qrej', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'qrej', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'q1', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'q2', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'q3', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'qrej', 'bbbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabb', 'qrej', 'bbbbbbbbbbbbbc']]
+[['aaaaaaaaaaaaaaabbbb', 'q1', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'q2', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'q3', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'qrej', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'qrej', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'q1', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'q2', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'q3', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'qrej', 'bbbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbb', 'qrej', 'bbbbbbbbbbbbc']]
+[['aaaaaaaaaaaaaaabbbbb', 'q1', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'q2', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'q3', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'qrej', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'qrej', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'q1', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'q2', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'q3', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'qrej', 'bbbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbb', 'qrej', 'bbbbbbbbbbbc']]
+[['aaaaaaaaaaaaaaabbbbbb', 'q1', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'q2', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'q3', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'qrej', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'qrej', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'q1', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'q2', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'q3', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'qrej', 'bbbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbb', 'qrej', 'bbbbbbbbbbc']]
+[['aaaaaaaaaaaaaaabbbbbbb', 'q1', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'q2', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'q3', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'qrej', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'qrej', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'q1', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'q2', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'q3', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'qrej', 'bbbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbb', 'qrej', 'bbbbbbbbbc']]
+[['aaaaaaaaaaaaaaabbbbbbbb', 'q1', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'q2', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'q3', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'qrej', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'qrej', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'q1', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'q2', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'q3', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'qrej', 'bbbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbb', 'qrej', 'bbbbbbbbc']]
+[['aaaaaaaaaaaaaaabbbbbbbbb', 'q1', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'q2', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'q3', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'qrej', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'qrej', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'q1', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'q2', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'q3', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'qrej', 'bbbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbb', 'qrej', 'bbbbbbbc']]
+[['aaaaaaaaaaaaaaabbbbbbbbbb', 'q1', 'bbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbbb', 'q2', 'bbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbbb', 'q3', 'bbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'qrej', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'qrej', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbbb', 'q1', 'bbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbbb', 'q2', 'bbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbbb', 'q3', 'bbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'qrej', 'bbbbbbc'], ['aaaaaaaaaaaaaaabbbbbbbbb', 'qrej', 'bbbbbbc']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "aaaabbbbbbbb"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 13
+Total number of transitions: 109
+String accepted after 13 transitions
+Average non-determinism: 8.384615384615385
+Configuration Tree:
+[['', 'q0', 'aaaabbbbbbbb']]
+[['a', 'q0', 'aaabbbbbbbb'], ['a', 'q1', 'aaabbbbbbbb'], ['a', 'q2', 'aaabbbbbbbb'], ['a', 'q3', 'aaabbbbbbbb']]
+[['aa', 'q0', 'aabbbbbbbb'], ['aa', 'q1', 'aabbbbbbbb'], ['aa', 'q2', 'aabbbbbbbb'], ['aa', 'q3', 'aabbbbbbbb'], ['a', 'qrej', 'aaabbbbbbbb'], ['a', 'qrej', 'aaabbbbbbbb'], ['a', 'qrej', 'aaabbbbbbbb']]
+[['aaa', 'q0', 'abbbbbbbb'], ['aaa', 'q1', 'abbbbbbbb'], ['aaa', 'q2', 'abbbbbbbb'], ['aaa', 'q3', 'abbbbbbbb'], ['aa', 'qrej', 'aabbbbbbbb'], ['aa', 'qrej', 'aabbbbbbbb'], ['aa', 'qrej', 'aabbbbbbbb']]
+[['aaaa', 'q0', 'bbbbbbbb'], ['aaaa', 'q1', 'bbbbbbbb'], ['aaaa', 'q2', 'bbbbbbbb'], ['aaaa', 'q3', 'bbbbbbbb'], ['aaa', 'qrej', 'abbbbbbbb'], ['aaa', 'qrej', 'abbbbbbbb'], ['aaa', 'qrej', 'abbbbbbbb']]
+[['aaaab', 'q1', 'bbbbbbb'], ['aaaab', 'q2', 'bbbbbbb'], ['aaaab', 'q3', 'bbbbbbb'], ['aaaab', 'q1', 'bbbbbbb'], ['aaaab', 'q2', 'bbbbbbb'], ['aaaab', 'q3', 'bbbbbbb'], ['aaaa', 'qrej', 'bbbbbbbb'], ['aaaa', 'qrej', 'bbbbbbbb']]
+[['aaaabb', 'q1', 'bbbbbb'], ['aaaabb', 'q2', 'bbbbbb'], ['aaaabb', 'q3', 'bbbbbb'], ['aaaab', 'qrej', 'bbbbbbb'], ['aaaab', 'qrej', 'bbbbbbb'], ['aaaabb', 'q1', 'bbbbbb'], ['aaaabb', 'q2', 'bbbbbb'], ['aaaabb', 'q3', 'bbbbbb'], ['aaaab', 'qrej', 'bbbbbbb'], ['aaaab', 'qrej', 'bbbbbbb']]
+[['aaaabbb', 'q1', 'bbbbb'], ['aaaabbb', 'q2', 'bbbbb'], ['aaaabbb', 'q3', 'bbbbb'], ['aaaabb', 'qrej', 'bbbbbb'], ['aaaabb', 'qrej', 'bbbbbb'], ['aaaabbb', 'q1', 'bbbbb'], ['aaaabbb', 'q2', 'bbbbb'], ['aaaabbb', 'q3', 'bbbbb'], ['aaaabb', 'qrej', 'bbbbbb'], ['aaaabb', 'qrej', 'bbbbbb']]
+[['aaaabbbb', 'q1', 'bbbb'], ['aaaabbbb', 'q2', 'bbbb'], ['aaaabbbb', 'q3', 'bbbb'], ['aaaabbb', 'qrej', 'bbbbb'], ['aaaabbb', 'qrej', 'bbbbb'], ['aaaabbbb', 'q1', 'bbbb'], ['aaaabbbb', 'q2', 'bbbb'], ['aaaabbbb', 'q3', 'bbbb'], ['aaaabbb', 'qrej', 'bbbbb'], ['aaaabbb', 'qrej', 'bbbbb']]
+[['aaaabbbbb', 'q1', 'bbb'], ['aaaabbbbb', 'q2', 'bbb'], ['aaaabbbbb', 'q3', 'bbb'], ['aaaabbbb', 'qrej', 'bbbb'], ['aaaabbbb', 'qrej', 'bbbb'], ['aaaabbbbb', 'q1', 'bbb'], ['aaaabbbbb', 'q2', 'bbb'], ['aaaabbbbb', 'q3', 'bbb'], ['aaaabbbb', 'qrej', 'bbbb'], ['aaaabbbb', 'qrej', 'bbbb']]
+[['aaaabbbbbb', 'q1', 'bb'], ['aaaabbbbbb', 'q2', 'bb'], ['aaaabbbbbb', 'q3', 'bb'], ['aaaabbbbb', 'qrej', 'bbb'], ['aaaabbbbb', 'qrej', 'bbb'], ['aaaabbbbbb', 'q1', 'bb'], ['aaaabbbbbb', 'q2', 'bb'], ['aaaabbbbbb', 'q3', 'bb'], ['aaaabbbbb', 'qrej', 'bbb'], ['aaaabbbbb', 'qrej', 'bbb']]
+[['aaaabbbbbbb', 'q1', 'b'], ['aaaabbbbbbb', 'q2', 'b'], ['aaaabbbbbbb', 'q3', 'b'], ['aaaabbbbbb', 'qrej', 'bb'], ['aaaabbbbbb', 'qrej', 'bb'], ['aaaabbbbbbb', 'q1', 'b'], ['aaaabbbbbbb', 'q2', 'b'], ['aaaabbbbbbb', 'q3', 'b'], ['aaaabbbbbb', 'qrej', 'bb'], ['aaaabbbbbb', 'qrej', 'bb']]
+[['aaaabbbbbbbb', 'q1', '_'], ['aaaabbbbbbbb', 'q2', '_'], ['aaaabbbbbbbb', 'q3', '_'], ['aaaabbbbbbb', 'qrej', 'b'], ['aaaabbbbbbb', 'qrej', 'b'], ['aaaabbbbbbbb', 'q1', '_'], ['aaaabbbbbbbb', 'q2', '_'], ['aaaabbbbbbbb', 'q3', '_'], ['aaaabbbbbbb', 'qrej', 'b'], ['aaaabbbbbbb', 'qrej', 'b']]
+[['aaaabbbbbbbb', 'qrej', '_'], ['aaaabbbbbbbb', 'qrej', '_'], ['aaaabbbbbbbb_', 'qacc', '_'], ['aaaabbbbbbbb', 'qrej', '_'], ['aaaabbbbbbbb', 'qrej', '_'], ['aaaabbbbbbbb_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "aaccccccccccc"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 14
+Total number of transitions: 81
+String accepted after 14 transitions
+Average non-determinism: 5.785714285714286
+Configuration Tree:
+[['', 'q0', 'aaccccccccccc']]
+[['a', 'q0', 'accccccccccc'], ['a', 'q1', 'accccccccccc'], ['a', 'q2', 'accccccccccc'], ['a', 'q3', 'accccccccccc']]
+[['aa', 'q0', 'ccccccccccc'], ['aa', 'q1', 'ccccccccccc'], ['aa', 'q2', 'ccccccccccc'], ['aa', 'q3', 'ccccccccccc'], ['a', 'qrej', 'accccccccccc'], ['a', 'qrej', 'accccccccccc'], ['a', 'qrej', 'accccccccccc']]
+[['aac', 'q2', 'cccccccccc'], ['aac', 'q3', 'cccccccccc'], ['aa', 'qrej', 'ccccccccccc'], ['aac', 'q2', 'cccccccccc'], ['aac', 'q3', 'cccccccccc'], ['aa', 'qrej', 'ccccccccccc']]
+[['aacc', 'q2', 'ccccccccc'], ['aacc', 'q3', 'ccccccccc'], ['aac', 'qrej', 'cccccccccc'], ['aacc', 'q2', 'ccccccccc'], ['aacc', 'q3', 'ccccccccc'], ['aac', 'qrej', 'cccccccccc']]
+[['aaccc', 'q2', 'cccccccc'], ['aaccc', 'q3', 'cccccccc'], ['aacc', 'qrej', 'ccccccccc'], ['aaccc', 'q2', 'cccccccc'], ['aaccc', 'q3', 'cccccccc'], ['aacc', 'qrej', 'ccccccccc']]
+[['aacccc', 'q2', 'ccccccc'], ['aacccc', 'q3', 'ccccccc'], ['aaccc', 'qrej', 'cccccccc'], ['aacccc', 'q2', 'ccccccc'], ['aacccc', 'q3', 'ccccccc'], ['aaccc', 'qrej', 'cccccccc']]
+[['aaccccc', 'q2', 'cccccc'], ['aaccccc', 'q3', 'cccccc'], ['aacccc', 'qrej', 'ccccccc'], ['aaccccc', 'q2', 'cccccc'], ['aaccccc', 'q3', 'cccccc'], ['aacccc', 'qrej', 'ccccccc']]
+[['aacccccc', 'q2', 'ccccc'], ['aacccccc', 'q3', 'ccccc'], ['aaccccc', 'qrej', 'cccccc'], ['aacccccc', 'q2', 'ccccc'], ['aacccccc', 'q3', 'ccccc'], ['aaccccc', 'qrej', 'cccccc']]
+[['aaccccccc', 'q2', 'cccc'], ['aaccccccc', 'q3', 'cccc'], ['aacccccc', 'qrej', 'ccccc'], ['aaccccccc', 'q2', 'cccc'], ['aaccccccc', 'q3', 'cccc'], ['aacccccc', 'qrej', 'ccccc']]
+[['aacccccccc', 'q2', 'ccc'], ['aacccccccc', 'q3', 'ccc'], ['aaccccccc', 'qrej', 'cccc'], ['aacccccccc', 'q2', 'ccc'], ['aacccccccc', 'q3', 'ccc'], ['aaccccccc', 'qrej', 'cccc']]
+[['aaccccccccc', 'q2', 'cc'], ['aaccccccccc', 'q3', 'cc'], ['aacccccccc', 'qrej', 'ccc'], ['aaccccccccc', 'q2', 'cc'], ['aaccccccccc', 'q3', 'cc'], ['aacccccccc', 'qrej', 'ccc']]
+[['aacccccccccc', 'q2', 'c'], ['aacccccccccc', 'q3', 'c'], ['aaccccccccc', 'qrej', 'cc'], ['aacccccccccc', 'q2', 'c'], ['aacccccccccc', 'q3', 'c'], ['aaccccccccc', 'qrej', 'cc']]
+[['aaccccccccccc', 'q2', '_'], ['aaccccccccccc', 'q3', '_'], ['aacccccccccc', 'qrej', 'c'], ['aaccccccccccc', 'q2', '_'], ['aaccccccccccc', 'q3', '_'], ['aacccccccccc', 'qrej', 'c']]
+[['aaccccccccccc', 'qrej', '_'], ['aaccccccccccc_', 'qacc', '_'], ['aaccccccccccc', 'qrej', '_'], ['aaccccccccccc_', 'qacc', '_']]
+
+Machine being run: a*b*c* Nondeterministic
+Input string: "abcabcabc"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 4
+Total number of transitions: 24
+String rejected after 4 transitions
+Average non-determinism: 6.0
+Configuration Tree:
+[['', 'q0', 'abcabcabc']]
+[['a', 'q0', 'bcabcabc'], ['a', 'q1', 'bcabcabc'], ['a', 'q2', 'bcabcabc'], ['a', 'q3', 'bcabcabc']]
+[['ab', 'q1', 'cabcabc'], ['ab', 'q2', 'cabcabc'], ['ab', 'q3', 'cabcabc'], ['ab', 'q1', 'cabcabc'], ['ab', 'q2', 'cabcabc'], ['ab', 'q3', 'cabcabc'], ['a', 'qrej', 'bcabcabc'], ['a', 'qrej', 'bcabcabc']]
+[['ab', 'qrej', 'cabcabc'], ['abc', 'q2', 'abcabc'], ['abc', 'q3', 'abcabc'], ['ab', 'qrej', 'cabcabc'], ['ab', 'qrej', 'cabcabc'], ['abc', 'q2', 'abcabc'], ['abc', 'q3', 'abcabc'], ['ab', 'qrej', 'cabcabc']]
+[['abc', 'qrej', 'abcabc'], ['abc', 'qrej', 'abcabc'], ['abc', 'qrej', 'abcabc'], ['abc', 'qrej', 'abcabc']]
+
+Average determinism for inputted strings: 6.433962264150943
+This represents the average number of possible states at each step of the machine.

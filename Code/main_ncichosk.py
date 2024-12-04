@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 
 # Theory of Computing project 2: NTM tracing program
-
+#
+# This project uses the prettytable library to print tables
+# In order to install, please paste "python3 -m pip install -U prettytable"
+# into the command line.
+#
 # This code traces the different paths a non-deterministic turing machine
 # follows when evaluating a peice of input. The output includes the depth 
 # of the configuration tree, the amound of transitions it takes, as well as
@@ -25,6 +29,7 @@
 import sys
 import csv
 from functions_ncichosk import run_machine
+from prettytable import PrettyTable
 
 def main():
 
@@ -51,7 +56,7 @@ def main():
     if output_file == 'none': # Sets up to write to output file
         outfile = None
     else:
-        outfile = open(sys.argv[2], "w")
+        outfile = open(f'Output/output_{output_file}_ncichosk.txt', "w")
     try: # Sets maximum depth with a default of 100
         max_depth = int(sys.argv[3])
     except:
@@ -60,16 +65,30 @@ def main():
 
     layer_total = 0
     transition_total = 0
+    table = PrettyTable() # Initializes an output talbe using PrettyTable
+    table.field_names = ["Machine", "Input String", "Result", "Depth", "Configurations Explored", "Average Nondeterminism", "Comments"]
     while True: # Reads in and runs input strings
         input_string = input("Enter a string: ")
 
         if not input_string:
             break
 
+        comments = input("Enter comments: ")
+
         # Runs machine and saves output
         transitions, depth, solved, accepted, results = run_machine(input_string, rules, start, accept, reject, max_depth)
         layer_total += depth
         transition_total += transitions
+
+        if solved == False:
+            result = "Halted"
+        else:
+            if accepted == True:
+                result = "Accepted"
+            else:
+                result = "Rejected"
+
+        table.add_row([machine, input_string, result, depth, transitions, transitions/depth, comments])
 
         if outfile: # Writes to outfile if specified
             outfile.write(f'Machine being run: {machine}\n')
@@ -109,13 +128,22 @@ def main():
                 print(item)
             print()
 
+    final_comments = input("Enter final comments: ")
+
     if outfile:
         outfile.write(f'Average determinism for inputted strings: {transition_total / layer_total}\n')
         outfile.write(f'This represents the average number of possible states at each step of the machine.\n')
+        table.add_row([machine, "Totals", "N/A", layer_total, transition_total, transition_total/layer_total, final_comments])
+        table_outfile = open(f'Tables/table_{output_file}_ncichosk.txt', "w")
+        table_outfile.write(f'Table of tested strings for {machine}\n\n')
+        table_outfile.write(f'{table}\n')
 
     else:
         print(f'Average determinism for inputted strings: {transition_total / layer_total}')
         print(f'This represents the average number of possible states at each step of the machine.')
+        table.add_row([machine, "Totals", "N/A", layer_total, transition_total, transition_total/layer_total, final_comments])
+        print(f'Table of tested strings for {machine}\n')
+        print(table)
 
 if __name__ == "__main__":
     if len(sys.argv) < 0: # Prints error if incorrect amount of input is used
