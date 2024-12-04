@@ -84,6 +84,7 @@ def main():
                     outfile.write(f'String accepted after {depth} transitions\n')
                 else:
                     outfile.write(f'String rejected after {depth} transitions\n')
+            outfile.write(f'Average non-determinism: {transitions / depth}\n')
             outfile.write(f'Configuration Tree:\n')
             for item in results:
                 outfile.write(f'{item}\n')
@@ -102,6 +103,7 @@ def main():
                     print(f'String accepted after {depth} transitions')
                 else:
                     print(f'String rejected after {depth} transitions')
+            print(f'Average non-determinism: {transitions / depth}')
             print(f'Configuration Tree:')
             for item in results:
                 print(item)
