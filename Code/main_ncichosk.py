@@ -15,7 +15,7 @@
 # To run the program, one should call the main function, the machine they want to run, 
 # where they want to print output, and the maximum depth they want the machine to run.
 # The call should look like this on the command line:
-# Code/main.py Data/{desired NTM}.csv Output/{desired output file}.txt 50
+# Code/main_ncichosk.py Data/{desired NTM}.csv Output/{desired output file}.txt 50
 # Users may print output to stdout by typing none as the output file and choose not to 
 # include a maximum tree depth in which case the program would default to 50
 #
