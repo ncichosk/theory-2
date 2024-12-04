@@ -57,6 +57,9 @@ def main():
     except:
         max_depth = 100
 
+
+    layer_total = 0
+    transition_total = 0
     while True: # Reads in and runs input strings
         input_string = input("Enter a string: ")
 
@@ -65,6 +68,8 @@ def main():
 
         # Runs machine and saves output
         transitions, depth, solved, accepted, results = run_machine(input_string, rules, start, accept, reject, max_depth)
+        layer_total += depth
+        transition_total += transitions
 
         if outfile: # Writes to outfile if specified
             outfile.write(f'Machine being run: {machine}\n')
@@ -101,6 +106,14 @@ def main():
             for item in results:
                 print(item)
             print()
+
+    if outfile:
+        outfile.write(f'Average determinism for inputted strings: {transition_total / layer_total}\n')
+        outfile.write(f'This represents the average number of possible states at each step of the machine.\n')
+
+    else:
+        print(f'Average determinism for inputted strings: {transition_total / layer_total}')
+        print(f'This represents the average number of possible states at each step of the machine.')
 
 if __name__ == "__main__":
     if len(sys.argv) < 0: # Prints error if incorrect amount of input is used
