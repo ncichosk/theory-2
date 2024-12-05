@@ -1,103 +1,167 @@
 Machine being run: a plus DTM
-Input string: "aaaa"
-Automatic stop at depth of 100
-
-Depth of configuration tree: 5
-Total number of transitions: 5
-String accepted after 5 transitions
-Configuration Tree:
-[['', 'q1', 'aaaa']]
-[['a', 'q1', 'aaa']]
-[['aa', 'q1', 'aa']]
-[['aaa', 'q1', 'a']]
-[['aaaa', 'q1', '_']]
-[['aaaaa', 'q2', '_']]
-
-Machine being run: a plus DTM
 Input string: "_"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 1
 Total number of transitions: 1
 String accepted after 1 transitions
+Average non-determinism: 1.0
 Configuration Tree:
 [['', 'q1', '_']]
 [['a', 'q2', '_']]
 
 Machine being run: a plus DTM
-Input string: "aaaaaaac"
-Automatic stop at depth of 100
-
-Depth of configuration tree: 8
-Total number of transitions: 8
-String rejected after 8 transitions
-Configuration Tree:
-[['', 'q1', 'aaaaaaac']]
-[['a', 'q1', 'aaaaaac']]
-[['aa', 'q1', 'aaaaac']]
-[['aaa', 'q1', 'aaaac']]
-[['aaaa', 'q1', 'aaac']]
-[['aaaaa', 'q1', 'aac']]
-[['aaaaaa', 'q1', 'ac']]
-[['aaaaaaa', 'q1', 'c']]
-[['aaaaaaa', 'qreject', 'c']]
-
-Machine being run: a plus DTM
-Input string: "aaaaaaaaaaaaacaaa"
-Automatic stop at depth of 100
-
-Depth of configuration tree: 14
-Total number of transitions: 14
-String rejected after 14 transitions
-Configuration Tree:
-[['', 'q1', 'aaaaaaaaaaaaacaaa']]
-[['a', 'q1', 'aaaaaaaaaaaacaaa']]
-[['aa', 'q1', 'aaaaaaaaaaacaaa']]
-[['aaa', 'q1', 'aaaaaaaaaacaaa']]
-[['aaaa', 'q1', 'aaaaaaaaacaaa']]
-[['aaaaa', 'q1', 'aaaaaaaacaaa']]
-[['aaaaaa', 'q1', 'aaaaaaacaaa']]
-[['aaaaaaa', 'q1', 'aaaaaacaaa']]
-[['aaaaaaaa', 'q1', 'aaaaacaaa']]
-[['aaaaaaaaa', 'q1', 'aaaacaaa']]
-[['aaaaaaaaaa', 'q1', 'aaacaaa']]
-[['aaaaaaaaaaa', 'q1', 'aacaaa']]
-[['aaaaaaaaaaaa', 'q1', 'acaaa']]
-[['aaaaaaaaaaaaa', 'q1', 'caaa']]
-[['aaaaaaaaaaaaa', 'qreject', 'caaa']]
-
-Machine being run: a plus DTM
-Input string: "caaaa"
-Automatic stop at depth of 100
-
-Depth of configuration tree: 1
-Total number of transitions: 1
-String rejected after 1 transitions
-Configuration Tree:
-[['', 'q1', 'caaaa']]
-[['', 'qreject', 'caaaa']]
-
-Machine being run: a plus DTM
-Input string: "acaa"
-Automatic stop at depth of 100
-
-Depth of configuration tree: 2
-Total number of transitions: 2
-String rejected after 2 transitions
-Configuration Tree:
-[['', 'q1', 'acaa']]
-[['a', 'q1', 'caa']]
-[['a', 'qreject', 'caa']]
-
-Machine being run: a plus DTM
 Input string: "a"
-Automatic stop at depth of 100
+Automatic stop at depth of 25
 
 Depth of configuration tree: 2
 Total number of transitions: 2
 String accepted after 2 transitions
+Average non-determinism: 1.0
 Configuration Tree:
 [['', 'q1', 'a']]
 [['a', 'q1', '_']]
 [['aa', 'q2', '_']]
 
+Machine being run: a plus DTM
+Input string: "aa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 3
+Total number of transitions: 3
+String accepted after 3 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'aa']]
+[['a', 'q1', 'a']]
+[['aa', 'q1', '_']]
+[['aaa', 'q2', '_']]
+
+Machine being run: a plus DTM
+Input string: "aaaaab"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 6
+Total number of transitions: 6
+String rejected after 6 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'aaaaab']]
+[['a', 'q1', 'aaaab']]
+[['aa', 'q1', 'aaab']]
+[['aaa', 'q1', 'aab']]
+[['aaaa', 'q1', 'ab']]
+[['aaaaa', 'q1', 'b']]
+[['aaaaa', 'qreject', 'b']]
+
+Machine being run: a plus DTM
+Input string: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 25
+Total number of transitions: 25
+Excecution halted after 25 layers
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['a', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+[['aaaaaaaaaaaaaaaaaaaaaaaaa', 'q1', 'aaaaaaaaaaaaaaaaaaaaaaaaaaa']]
+
+Machine being run: a plus DTM
+Input string: "aaabbbababababababa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 4
+Total number of transitions: 4
+String rejected after 4 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'aaabbbababababababa']]
+[['a', 'q1', 'aabbbababababababa']]
+[['aa', 'q1', 'abbbababababababa']]
+[['aaa', 'q1', 'bbbababababababa']]
+[['aaa', 'qreject', 'bbbababababababa']]
+
+Machine being run: a plus DTM
+Input string: "aaaaaaaaaaaaaaaaa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 18
+Total number of transitions: 18
+String accepted after 18 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'aaaaaaaaaaaaaaaaa']]
+[['a', 'q1', 'aaaaaaaaaaaaaaaa']]
+[['aa', 'q1', 'aaaaaaaaaaaaaaa']]
+[['aaa', 'q1', 'aaaaaaaaaaaaaa']]
+[['aaaa', 'q1', 'aaaaaaaaaaaaa']]
+[['aaaaa', 'q1', 'aaaaaaaaaaaa']]
+[['aaaaaa', 'q1', 'aaaaaaaaaaa']]
+[['aaaaaaa', 'q1', 'aaaaaaaaaa']]
+[['aaaaaaaa', 'q1', 'aaaaaaaaa']]
+[['aaaaaaaaa', 'q1', 'aaaaaaaa']]
+[['aaaaaaaaaa', 'q1', 'aaaaaaa']]
+[['aaaaaaaaaaa', 'q1', 'aaaaaa']]
+[['aaaaaaaaaaaa', 'q1', 'aaaaa']]
+[['aaaaaaaaaaaaa', 'q1', 'aaaa']]
+[['aaaaaaaaaaaaaa', 'q1', 'aaa']]
+[['aaaaaaaaaaaaaaa', 'q1', 'aa']]
+[['aaaaaaaaaaaaaaaa', 'q1', 'a']]
+[['aaaaaaaaaaaaaaaaa', 'q1', '_']]
+[['aaaaaaaaaaaaaaaaaa', 'q2', '_']]
+
+Machine being run: a plus DTM
+Input string: "baaaaa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 1
+Total number of transitions: 1
+String rejected after 1 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'baaaaa']]
+[['', 'qreject', 'baaaaa']]
+
+Machine being run: a plus DTM
+Input string: "aaaaa"
+Automatic stop at depth of 25
+
+Depth of configuration tree: 6
+Total number of transitions: 6
+String accepted after 6 transitions
+Average non-determinism: 1.0
+Configuration Tree:
+[['', 'q1', 'aaaaa']]
+[['a', 'q1', 'aaaa']]
+[['aa', 'q1', 'aaa']]
+[['aaa', 'q1', 'aa']]
+[['aaaa', 'q1', 'a']]
+[['aaaaa', 'q1', '_']]
+[['aaaaaa', 'q2', '_']]
+
+Average determinism for inputted strings: 1.0
+This represents the average number of possible states at each step of the machine.
