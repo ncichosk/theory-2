@@ -1,0 +1,16 @@
+This is a table combining one sample run from each machine tested.
+This is a manually produced table intended to compare the non-determinism different machines.
+It is important to note that all of the machines had a non-determinism of 1 as they only search a single deterministic configuration at each layer.
+It is also of note that the non-detrministic machines differ in their non-determinism with a*b*c* being the highest, a plus being second heichest,
+and same 01s being the lowest.
+
++-------------------------------------------------------------+--------------+----------+-------+-------------------------+------------------------+
+|                        Machine                              | Input String |  Result  | Depth | Configurations Explored | Average Nondeterminism |
++-------------------------------------------------------------+--------------+----------+-------+-------------------------+------------------------+
+|                      a plus DTM                             |    aaaaa     | Accepted |   6   |            6            |          1.0           |
+|                        a plus                               |    aaaaa     | Accepted |   6   |            16           |   2.6666666666666665   |
+|                  a*b*c* Deterministic                       |    aabbcc    | Accepted |   7   |            7            |          1.0           |
+|                 a*b*c* Nondeterministic                     |    aabbcc    | Accepted |   7   |            47           |   6.714285714285714    |
+|  {w | w has the same number of 0's and 1's} Deterministic   |    110110    | Rejected |   21  |            21           |          1.0           |
+| {w | w has the same number of 0's and 1's} Nondeterministic |    110100    | Accepted |   29  |            42           |   1.4482758620689655   |
++-------------------------------------------------------------+--------------+----------+-------+-------------------------+------------------------+

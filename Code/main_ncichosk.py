@@ -77,10 +77,10 @@ def main():
 
         # Runs machine and saves output
         transitions, depth, solved, accepted, results = run_machine(input_string, rules, start, accept, reject, max_depth)
-        layer_total += depth
-        transition_total += transitions
+        layer_total += depth # Tracks total depth for all strings input
+        transition_total += transitions # Tracks total configurations explored for all strings input
 
-        if solved == False:
+        if solved == False: # Determines which result to print in output table
             result = "Halted"
         else:
             if accepted == True:
@@ -88,8 +88,10 @@ def main():
             else:
                 result = "Rejected"
 
-        table.add_row([machine, input_string, result, depth, transitions, transitions/depth, comments])
+        table.add_row([machine, input_string, result, depth, transitions, transitions/depth, comments]) # Adds information for a given input string into the output table
 
+        # Text output for each string input
+        # Prints key information as well as transition table for each string tested
         if outfile: # Writes to outfile if specified
             outfile.write(f'Machine being run: {machine}\n')
             outfile.write(f'Input string: \"{input_string}\"\n')
@@ -128,9 +130,10 @@ def main():
                 print(item)
             print()
 
-    final_comments = input("Enter final comments: ")
+    final_comments = input("Enter final comments: ") # Comments for the totals row of the output table
 
-    if outfile:
+    # Outputs final comments and creates table of strings tested
+    if outfile: # Writes to outfile if specified
         outfile.write(f'Average determinism for inputted strings: {transition_total / layer_total}\n')
         outfile.write(f'This represents the average number of possible states at each step of the machine.\n')
         table.add_row([machine, "Totals", "N/A", layer_total, transition_total, transition_total/layer_total, final_comments])
